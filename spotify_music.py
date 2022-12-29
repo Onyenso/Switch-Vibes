@@ -33,7 +33,7 @@ def get_spotify_playlist(playlist_id):
 # example_spotify_playlist_url = https://open.spotify.com/playlist/3AyRHA5JC0QtHWHhdph1fb?si=44cc73ec9e444762
 # spotify_playlist = get_spotify_playlist("3AyRHA5JC0QtHWHhdph1fb")
 
-def search_for_spotify_track(query, artist, duration):
+def search_for_spotify_track(query, artists, duration, video):
     """
     Searches for a track on Spotify using title, artist and duration of track
     and returns a dictionary with the track's details if found, else returns None.
@@ -49,8 +49,8 @@ def search_for_spotify_track(query, artist, duration):
     {
             "title": "Wine",
             "artists": ["Rema", "Yseult"],
-            "duration_seconds": 210,
             "year": 2021,
+            "duration_seconds": 210,
             "track_url": "https://open.spotify.com/track/2qpCxK7imR1qbH4fbdgWLg"
     }
     """
@@ -64,16 +64,20 @@ def search_for_spotify_track(query, artist, duration):
         track_duration_seconds = int(track["duration_ms"] / 1000)
         track_year = int(track["album"]["release_date"][:4])
 
-        # Check that artist for given track is the same artist that is gotten and
-        # check that duration difference is not greater than 5 seconds.
-        if track["artists"][0]["name"] == artist and abs(track_duration_seconds - duration) <= 5:
+        # If (sole artist on YT == sole artist on Spotify AND duration difference
+        # is not greater than 5 seconds) OR (if track is a video on YT AND
+        # sole artist on YT == sole artist on Spotify AND duration difference
+        # is not greater than 60 seconds):
+        if (artists == [artist["name"].lower() for artist in track["artists"]] and abs(track_duration_seconds - duration) <= 5) or \
+        (video and artists == [artist["name"].lower() for artist in track["artists"]] and abs(track_duration_seconds - duration) <= 90):
+
             track_url = track["external_urls"]["spotify"]
             # add track to list
             track_results.append({
                 "title": track["name"],
                 "artists": [artist["name"] for artist in track["artists"]],
-                "duration_seconds": track_duration_seconds,
                 "year": track_year,
+                "duration_seconds": track_duration_seconds,
                 "track_url": track_url
             })
 
@@ -96,8 +100,8 @@ def convert_yt_to_spotify(yt_playlist):
     {
         "title": "Wine",
         "artists": ["Rema"],
+        "duration_seconds": 230,
         "year": 2022 || null,
-        "duration_seconds": 230
     }
     :return spotipy_playlist: a list of dictionaries. Each dictionary represents a track.
     E.g. of a dictionary in the list:
@@ -124,7 +128,13 @@ def convert_yt_to_spotify(yt_playlist):
         q = f"{track['title']} {artists}"
         print(q)
 
-        sp_track = search_for_spotify_track(q, track["artists"][0], track["duration_seconds"])
+        sp_track = search_for_spotify_track(
+            query=q,
+            artists=[artist.lower() for artist in track["artists"]],
+            duration=track["duration_seconds"],
+            video=track["video"]
+        )
+
         spotipy_playlist.append(sp_track)
 
     return spotipy_playlist
@@ -132,30 +142,20 @@ def convert_yt_to_spotify(yt_playlist):
 
 
 # TODO
-# Find out why Null is being returned for some yt tracks when searched on Spotify. ✅
-# Confirm that Holy Holy was in the first 50 that was returned from Spotify search. ✅
-# Retrive a song that has a video from YT Music and confirm if the duration are different from noraml audio. ✅
-# Rewrite the way you parse song details in convert_yt_to_spotify() in order to march the incoming details
-# from get_yt_playlist() accurately. ✅
+# Compare list of artists between YT and Spotify and see how often they are different. For ones
+# that are different, use list_similarity() to determine their difference and know the benchmark
+# for your condition.
 
-# REITERATIONS:
-# (Check that artist for given track is the same artist that is gotten and
-# check that duration difference is not greater than 5 seconds) OR that if song is a video, duration is not more
-# than 15 seconds difference.
+# Rewrite the function descriptions match their current parameters and returns.
 
-# Figure out a way to utilize all the artists in the list of artists of a track from YT Music when
-# checking the condition of comparism between YT Music and Spotify (in def search_for_spotify_track). Right now you're
-# just checking for the first artist from the list.
+# Figure out a way to utilze year during comparism. Right now, you're not making use of it.
 
-# Also figure out a way to utilze year during comparism. Right now, you're not making use of it.
+# Note that list_similarity() is only for comparison of lists, while string_similarity()
+# is only for comparison of strings. So what about YT tracks whose artists key is a list of just one
+# string? How will you use list_similarity or string_similarity?? Can you have different conditions
+# to check and handle tracks with one artist and tracks with more than one artist?? How will you
+# handle tracks with just one artist?
+# 
+# Idea:
+# If len artists > 1 
 
-# How to check nulls:
-# 1) Check for song title in YT Music JSON playlist
-# 2) Copy query that was used to serach for song from terminal.
-# 3) Paste query in Spotify search API console.
-# 4) Copy respoonse and paste in JSON viewer.
-# 5) Inspect artist name to make sure they match.
-# 6) If artist name match, compare song duration with YT Music song duration.
-# 7) If duration dont match, get videoID of song from raw_yt_playlist.json.
-# 8) yt.get_song() details of song and confirm if song was a video.
-# 9) Document your findings.

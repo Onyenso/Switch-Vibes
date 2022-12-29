@@ -26,7 +26,7 @@
     },
     "year": "2022",
     "duration": "5+ hours",
-    "trackCount": 339,
+    "trackCount": 371,
     "tracks": [
         {
             "videoId": "Dyf5M3c1NVo",
@@ -56,6 +56,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:44",
             "duration_seconds": 224
         },
@@ -87,6 +88,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:00",
             "duration_seconds": 240
         },
@@ -110,6 +112,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_OMV",
             "duration": "5:40",
             "duration_seconds": 340
         },
@@ -141,6 +144,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:33",
             "duration_seconds": 213
         },
@@ -172,6 +176,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:41",
             "duration_seconds": 161
         },
@@ -203,6 +208,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:00",
             "duration_seconds": 180
         },
@@ -234,6 +240,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:50",
             "duration_seconds": 230
         },
@@ -265,6 +272,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:39",
             "duration_seconds": 159
         },
@@ -304,6 +312,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:16",
             "duration_seconds": 196
         },
@@ -335,6 +344,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:00",
             "duration_seconds": 180
         },
@@ -366,6 +376,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:46",
             "duration_seconds": 166
         },
@@ -397,6 +408,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:34",
             "duration_seconds": 154
         },
@@ -428,6 +440,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:02",
             "duration_seconds": 122
         },
@@ -459,6 +472,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:40",
             "duration_seconds": 220
         },
@@ -490,6 +504,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:48",
             "duration_seconds": 228
         },
@@ -521,6 +536,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:59",
             "duration_seconds": 239
         },
@@ -552,8 +568,9 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
-            "duration": "3:24",
-            "duration_seconds": 204
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "3:25",
+            "duration_seconds": 205
         },
         {
             "videoId": "b9bn-EtmvvY",
@@ -583,6 +600,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:54",
             "duration_seconds": 174
         },
@@ -614,6 +632,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:32",
             "duration_seconds": 152
         },
@@ -645,6 +664,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:42",
             "duration_seconds": 222
         },
@@ -676,6 +696,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "1:41",
             "duration_seconds": 101
         },
@@ -707,6 +728,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:41",
             "duration_seconds": 221
         },
@@ -742,6 +764,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:31",
             "duration_seconds": 151
         },
@@ -773,6 +796,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:41",
             "duration_seconds": 221
         },
@@ -808,6 +832,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:54",
             "duration_seconds": 234
         },
@@ -839,11 +864,12 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:04",
             "duration_seconds": 184
         },
         {
-            "videoId": "zLxvNDTIwYU",
+            "videoId": "o6VLBKUITg4",
             "title": "Kolomental",
             "artists": [
                 {
@@ -853,23 +879,24 @@
             ],
             "album": {
                 "name": "Outlaw",
-                "id": "MPREb_cYtpAHHY5yQ"
+                "id": "MPREb_0EUpps2z2m7"
             },
             "likeStatus": "INDIFFERENT",
             "thumbnails": [
                 {
-                    "url": "https://lh3.googleusercontent.com/PMKBOp2X4bDPXjYkzT_RhdEmwuZxADhC0i61Cvr-xk3hMW9NBCX8tLZis3CPDRKakPLME2x9e3ZrH4s=w60-h60-l90-rj",
+                    "url": "https://lh3.googleusercontent.com/rCO-L4OMcuR0UndQaq2VYZtiSR9YQLXftYJEOOWnBKh_rZFaWOq1ANS7kFBko_teTmhVhS6sAN9x8VoY6g=w60-h60-l90-rj",
                     "width": 60,
                     "height": 60
                 },
                 {
-                    "url": "https://lh3.googleusercontent.com/PMKBOp2X4bDPXjYkzT_RhdEmwuZxADhC0i61Cvr-xk3hMW9NBCX8tLZis3CPDRKakPLME2x9e3ZrH4s=w120-h120-l90-rj",
+                    "url": "https://lh3.googleusercontent.com/rCO-L4OMcuR0UndQaq2VYZtiSR9YQLXftYJEOOWnBKh_rZFaWOq1ANS7kFBko_teTmhVhS6sAN9x8VoY6g=w120-h120-l90-rj",
                     "width": 120,
                     "height": 120
                 }
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:17",
             "duration_seconds": 197
         },
@@ -901,6 +928,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:58",
             "duration_seconds": 178
         },
@@ -932,6 +960,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:09",
             "duration_seconds": 189
         },
@@ -963,6 +992,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:25",
             "duration_seconds": 205
         },
@@ -998,6 +1028,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:15",
             "duration_seconds": 195
         },
@@ -1029,6 +1060,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:56",
             "duration_seconds": 176
         },
@@ -1060,6 +1092,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:05",
             "duration_seconds": 185
         },
@@ -1091,6 +1124,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:09",
             "duration_seconds": 249
         },
@@ -1122,6 +1156,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:32",
             "duration_seconds": 212
         },
@@ -1153,6 +1188,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:12",
             "duration_seconds": 192
         },
@@ -1184,6 +1220,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:20",
             "duration_seconds": 200
         },
@@ -1215,6 +1252,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:56",
             "duration_seconds": 236
         },
@@ -1246,6 +1284,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:26",
             "duration_seconds": 206
         },
@@ -1277,6 +1316,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:08",
             "duration_seconds": 188
         },
@@ -1308,6 +1348,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:59",
             "duration_seconds": 179
         },
@@ -1339,6 +1380,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:11",
             "duration_seconds": 251
         },
@@ -1370,6 +1412,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:28",
             "duration_seconds": 148
         },
@@ -1401,6 +1444,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:02",
             "duration_seconds": 182
         },
@@ -1432,6 +1476,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:59",
             "duration_seconds": 239
         },
@@ -1463,6 +1508,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:40",
             "duration_seconds": 160
         },
@@ -1498,6 +1544,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:28",
             "duration_seconds": 148
         },
@@ -1529,6 +1576,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:26",
             "duration_seconds": 206
         },
@@ -1560,6 +1608,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:47",
             "duration_seconds": 167
         },
@@ -1591,6 +1640,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:40",
             "duration_seconds": 160
         },
@@ -1626,6 +1676,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:07",
             "duration_seconds": 187
         },
@@ -1657,6 +1708,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:17",
             "duration_seconds": 197
         },
@@ -1688,6 +1740,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:34",
             "duration_seconds": 154
         },
@@ -1719,6 +1772,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:34",
             "duration_seconds": 214
         },
@@ -1753,7 +1807,8 @@
                 }
             ],
             "isAvailable": true,
-            "isExplicit": false,
+            "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:04",
             "duration_seconds": 184
         },
@@ -1785,6 +1840,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:04",
             "duration_seconds": 184
         },
@@ -1816,6 +1872,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:01",
             "duration_seconds": 181
         },
@@ -1847,6 +1904,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:19",
             "duration_seconds": 199
         },
@@ -1878,6 +1936,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:22",
             "duration_seconds": 202
         },
@@ -1909,6 +1968,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:19",
             "duration_seconds": 199
         },
@@ -1940,6 +2000,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:09",
             "duration_seconds": 189
         },
@@ -1971,6 +2032,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:16",
             "duration_seconds": 196
         },
@@ -2002,47 +2064,41 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:20",
             "duration_seconds": 200
         },
         {
-            "videoId": "LcQdnzAvpgQ",
-            "title": "Sugarcane [Remix] (feat. King Promise)",
+            "videoId": "H2QWYeIAzLs",
+            "title": "Sugarcane [Remix] (Sped Up) (feat. King Promise, Mayorkun & Darkoo)",
             "artists": [
                 {
                     "name": "Camidoh",
-                    "id": null
-                },
-                {
-                    "name": "Mayorkun",
-                    "id": null
-                },
-                {
-                    "name": "Darkoo",
-                    "id": null
+                    "id": "UCMDqwM3Sg7U63iny09xUjtQ"
                 }
             ],
             "album": {
-                "name": "Sugarcane (Remix)",
-                "id": "MPREb_0J9zR7Pl98w"
+                "name": "Sugarcane (Sped Up & Glitch Africa Remix)",
+                "id": "MPREb_AdlzntL2Uvp"
             },
             "likeStatus": "INDIFFERENT",
             "thumbnails": [
                 {
-                    "url": "https://lh3.googleusercontent.com/Q6S7rlq6IZZ3t6RojCBZagwMxROYAa-6pyXajl41TWo4Q3A2P530RFOwL8V6ct_j1FX6ShHI-ncRnHap=w60-h60-l90-rj",
+                    "url": "https://lh3.googleusercontent.com/Da-NXsK3PpApxDs-gWUdQteNymGsAXsoU0Lda7aoAnGwyUOLies2u6L3vgHxdxkmZ2j7agSg3jCmL2jO=w60-h60-l90-rj",
                     "width": 60,
                     "height": 60
                 },
                 {
-                    "url": "https://lh3.googleusercontent.com/Q6S7rlq6IZZ3t6RojCBZagwMxROYAa-6pyXajl41TWo4Q3A2P530RFOwL8V6ct_j1FX6ShHI-ncRnHap=w120-h120-l90-rj",
+                    "url": "https://lh3.googleusercontent.com/Da-NXsK3PpApxDs-gWUdQteNymGsAXsoU0Lda7aoAnGwyUOLies2u6L3vgHxdxkmZ2j7agSg3jCmL2jO=w120-h120-l90-rj",
                     "width": 120,
                     "height": 120
                 }
             ],
             "isAvailable": true,
             "isExplicit": true,
-            "duration": "4:12",
-            "duration_seconds": 252
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "3:28",
+            "duration_seconds": 208
         },
         {
             "videoId": "YFervpMG_sM",
@@ -2072,6 +2128,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:14",
             "duration_seconds": 194
         },
@@ -2103,6 +2160,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "5:06",
             "duration_seconds": 306
         },
@@ -2134,6 +2192,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:09",
             "duration_seconds": 249
         },
@@ -2169,6 +2228,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:09",
             "duration_seconds": 189
         },
@@ -2204,6 +2264,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:59",
             "duration_seconds": 179
         },
@@ -2235,6 +2296,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:15",
             "duration_seconds": 255
         },
@@ -2266,6 +2328,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:50",
             "duration_seconds": 230
         },
@@ -2297,6 +2360,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:36",
             "duration_seconds": 156
         },
@@ -2332,6 +2396,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:04",
             "duration_seconds": 184
         },
@@ -2363,6 +2428,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:14",
             "duration_seconds": 194
         },
@@ -2394,6 +2460,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:17",
             "duration_seconds": 197
         },
@@ -2429,6 +2496,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:22",
             "duration_seconds": 202
         },
@@ -2460,6 +2528,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:45",
             "duration_seconds": 165
         },
@@ -2491,6 +2560,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:06",
             "duration_seconds": 246
         },
@@ -2522,6 +2592,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:58",
             "duration_seconds": 238
         },
@@ -2553,6 +2624,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:08",
             "duration_seconds": 188
         },
@@ -2584,6 +2656,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:23",
             "duration_seconds": 263
         },
@@ -2615,6 +2688,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:40",
             "duration_seconds": 220
         },
@@ -2646,6 +2720,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:37",
             "duration_seconds": 157
         },
@@ -2677,6 +2752,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:33",
             "duration_seconds": 213
         },
@@ -2708,6 +2784,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:39",
             "duration_seconds": 159
         },
@@ -2739,6 +2816,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:08",
             "duration_seconds": 248
         },
@@ -2770,6 +2848,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:13",
             "duration_seconds": 193
         },
@@ -2801,6 +2880,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:49",
             "duration_seconds": 289
         },
@@ -2832,6 +2912,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:46",
             "duration_seconds": 166
         },
@@ -2863,6 +2944,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "5:26",
             "duration_seconds": 326
         },
@@ -2894,6 +2976,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:25",
             "duration_seconds": 205
         },
@@ -2925,6 +3008,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:54",
             "duration_seconds": 294
         },
@@ -2956,6 +3040,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:58",
             "duration_seconds": 298
         },
@@ -2987,6 +3072,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:24",
             "duration_seconds": 264
         },
@@ -3018,6 +3104,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:19",
             "duration_seconds": 259
         },
@@ -3049,6 +3136,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:34",
             "duration_seconds": 214
         },
@@ -3084,6 +3172,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:46",
             "duration_seconds": 226
         },
@@ -3115,6 +3204,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:34",
             "duration_seconds": 214
         },
@@ -3146,6 +3236,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:30",
             "duration_seconds": 210
         },
@@ -3177,6 +3268,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:11",
             "duration_seconds": 251
         },
@@ -3208,6 +3300,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:37",
             "duration_seconds": 217
         },
@@ -3239,6 +3332,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:23",
             "duration_seconds": 203
         },
@@ -3270,6 +3364,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:05",
             "duration_seconds": 245
         },
@@ -3301,6 +3396,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:00",
             "duration_seconds": 180
         },
@@ -3332,6 +3428,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:33",
             "duration_seconds": 213
         },
@@ -3363,6 +3460,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:25",
             "duration_seconds": 145
         },
@@ -3394,6 +3492,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:18",
             "duration_seconds": 198
         },
@@ -3425,6 +3524,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:20",
             "duration_seconds": 200
         },
@@ -3456,6 +3556,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:23",
             "duration_seconds": 263
         },
@@ -3487,6 +3588,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:43",
             "duration_seconds": 163
         },
@@ -3526,6 +3628,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:27",
             "duration_seconds": 147
         },
@@ -3557,6 +3660,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:31",
             "duration_seconds": 211
         },
@@ -3588,6 +3692,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:52",
             "duration_seconds": 172
         },
@@ -3619,6 +3724,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:17",
             "duration_seconds": 197
         },
@@ -3654,6 +3760,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:34",
             "duration_seconds": 214
         },
@@ -3685,6 +3792,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:54",
             "duration_seconds": 234
         },
@@ -3716,6 +3824,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:37",
             "duration_seconds": 217
         },
@@ -3747,6 +3856,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:41",
             "duration_seconds": 221
         },
@@ -3778,6 +3888,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:29",
             "duration_seconds": 209
         },
@@ -3809,6 +3920,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:51",
             "duration_seconds": 231
         },
@@ -3840,6 +3952,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:24",
             "duration_seconds": 264
         },
@@ -3883,6 +3996,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:44",
             "duration_seconds": 224
         },
@@ -3914,6 +4028,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:42",
             "duration_seconds": 282
         },
@@ -3945,6 +4060,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:00",
             "duration_seconds": 240
         },
@@ -3976,6 +4092,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:30",
             "duration_seconds": 270
         },
@@ -4011,6 +4128,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:55",
             "duration_seconds": 175
         },
@@ -4042,6 +4160,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:38",
             "duration_seconds": 218
         },
@@ -4073,6 +4192,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:05",
             "duration_seconds": 185
         },
@@ -4104,6 +4224,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:00",
             "duration_seconds": 240
         },
@@ -4135,6 +4256,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:39",
             "duration_seconds": 219
         },
@@ -4166,6 +4288,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:38",
             "duration_seconds": 218
         },
@@ -4201,6 +4324,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:14",
             "duration_seconds": 194
         },
@@ -4232,6 +4356,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:19",
             "duration_seconds": 139
         },
@@ -4263,6 +4388,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "5:05",
             "duration_seconds": 305
         },
@@ -4294,6 +4420,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:10",
             "duration_seconds": 190
         },
@@ -4325,6 +4452,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:25",
             "duration_seconds": 265
         },
@@ -4356,6 +4484,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:52",
             "duration_seconds": 232
         },
@@ -4387,6 +4516,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:50",
             "duration_seconds": 230
         },
@@ -4418,6 +4548,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:40",
             "duration_seconds": 160
         },
@@ -4449,6 +4580,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:38",
             "duration_seconds": 158
         },
@@ -4488,6 +4620,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:54",
             "duration_seconds": 174
         },
@@ -4519,6 +4652,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:38",
             "duration_seconds": 158
         },
@@ -4550,6 +4684,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:01",
             "duration_seconds": 241
         },
@@ -4581,6 +4716,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:37",
             "duration_seconds": 157
         },
@@ -4612,6 +4748,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:25",
             "duration_seconds": 265
         },
@@ -4643,6 +4780,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:48",
             "duration_seconds": 228
         },
@@ -4674,6 +4812,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:49",
             "duration_seconds": 229
         },
@@ -4705,6 +4844,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "5:44",
             "duration_seconds": 344
         },
@@ -4736,6 +4876,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:03",
             "duration_seconds": 243
         },
@@ -4767,6 +4908,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:51",
             "duration_seconds": 231
         },
@@ -4798,6 +4940,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:12",
             "duration_seconds": 252
         },
@@ -4829,6 +4972,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "5:12",
             "duration_seconds": 312
         },
@@ -4864,6 +5008,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:40",
             "duration_seconds": 220
         },
@@ -4895,6 +5040,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:37",
             "duration_seconds": 277
         },
@@ -4926,6 +5072,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:20",
             "duration_seconds": 200
         },
@@ -4957,6 +5104,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:44",
             "duration_seconds": 224
         },
@@ -4988,6 +5136,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:51",
             "duration_seconds": 291
         },
@@ -5019,6 +5168,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:47",
             "duration_seconds": 227
         },
@@ -5050,6 +5200,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:26",
             "duration_seconds": 266
         },
@@ -5081,6 +5232,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:51",
             "duration_seconds": 231
         },
@@ -5112,6 +5264,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:48",
             "duration_seconds": 288
         },
@@ -5143,6 +5296,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:02",
             "duration_seconds": 242
         },
@@ -5174,6 +5328,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:19",
             "duration_seconds": 199
         },
@@ -5205,6 +5360,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:53",
             "duration_seconds": 233
         },
@@ -5236,6 +5392,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "5:14",
             "duration_seconds": 314
         },
@@ -5267,6 +5424,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:17",
             "duration_seconds": 197
         },
@@ -5298,6 +5456,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:54",
             "duration_seconds": 294
         },
@@ -5329,6 +5488,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:29",
             "duration_seconds": 209
         },
@@ -5360,6 +5520,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:44",
             "duration_seconds": 284
         },
@@ -5399,6 +5560,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:17",
             "duration_seconds": 257
         },
@@ -5430,6 +5592,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:47",
             "duration_seconds": 227
         },
@@ -5461,6 +5624,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:03",
             "duration_seconds": 183
         },
@@ -5492,6 +5656,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:32",
             "duration_seconds": 152
         },
@@ -5523,6 +5688,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:27",
             "duration_seconds": 207
         },
@@ -5554,6 +5720,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:52",
             "duration_seconds": 172
         },
@@ -5585,6 +5752,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:02",
             "duration_seconds": 242
         },
@@ -5616,6 +5784,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:39",
             "duration_seconds": 279
         },
@@ -5647,6 +5816,7 @@
             ],
             "isAvailable": false,
             "isExplicit": false,
+            "videoType": null,
             "duration": "5:04",
             "duration_seconds": 304
         },
@@ -5678,6 +5848,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:57",
             "duration_seconds": 177
         },
@@ -5709,6 +5880,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:00",
             "duration_seconds": 180
         },
@@ -5740,6 +5912,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "5:37",
             "duration_seconds": 337
         },
@@ -5771,6 +5944,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:59",
             "duration_seconds": 179
         },
@@ -5802,6 +5976,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:43",
             "duration_seconds": 223
         },
@@ -5833,6 +6008,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:03",
             "duration_seconds": 243
         },
@@ -5864,6 +6040,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:22",
             "duration_seconds": 202
         },
@@ -5895,6 +6072,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:34",
             "duration_seconds": 214
         },
@@ -5926,6 +6104,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:56",
             "duration_seconds": 176
         },
@@ -5957,6 +6136,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:25",
             "duration_seconds": 205
         },
@@ -5988,6 +6168,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:11",
             "duration_seconds": 191
         },
@@ -6019,6 +6200,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:37",
             "duration_seconds": 217
         },
@@ -6050,6 +6232,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:58",
             "duration_seconds": 238
         },
@@ -6081,6 +6264,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:31",
             "duration_seconds": 211
         },
@@ -6112,6 +6296,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:25",
             "duration_seconds": 145
         },
@@ -6143,6 +6328,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "5:30",
             "duration_seconds": 330
         },
@@ -6174,6 +6360,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:21",
             "duration_seconds": 261
         },
@@ -6205,6 +6392,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:31",
             "duration_seconds": 211
         },
@@ -6236,6 +6424,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:50",
             "duration_seconds": 230
         },
@@ -6267,6 +6456,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:48",
             "duration_seconds": 168
         },
@@ -6298,6 +6488,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:14",
             "duration_seconds": 254
         },
@@ -6329,6 +6520,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:49",
             "duration_seconds": 169
         },
@@ -6360,6 +6552,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:03",
             "duration_seconds": 243
         },
@@ -6391,6 +6584,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:20",
             "duration_seconds": 200
         },
@@ -6422,6 +6616,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:52",
             "duration_seconds": 292
         },
@@ -6461,6 +6656,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:18",
             "duration_seconds": 198
         },
@@ -6496,6 +6692,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:07",
             "duration_seconds": 187
         },
@@ -6527,6 +6724,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:23",
             "duration_seconds": 203
         },
@@ -6558,6 +6756,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:06",
             "duration_seconds": 246
         },
@@ -6589,6 +6788,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:47",
             "duration_seconds": 227
         },
@@ -6620,6 +6820,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:08",
             "duration_seconds": 188
         },
@@ -6651,6 +6852,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:50",
             "duration_seconds": 230
         },
@@ -6682,6 +6884,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:37",
             "duration_seconds": 277
         },
@@ -6713,6 +6916,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:36",
             "duration_seconds": 276
         },
@@ -6744,6 +6948,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:53",
             "duration_seconds": 233
         },
@@ -6775,6 +6980,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "5:22",
             "duration_seconds": 322
         },
@@ -6810,6 +7016,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:07",
             "duration_seconds": 247
         },
@@ -6841,6 +7048,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:48",
             "duration_seconds": 228
         },
@@ -6872,6 +7080,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:01",
             "duration_seconds": 181
         },
@@ -6903,6 +7112,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:30",
             "duration_seconds": 210
         },
@@ -6934,6 +7144,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:28",
             "duration_seconds": 208
         },
@@ -6969,6 +7180,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:00",
             "duration_seconds": 240
         },
@@ -7000,6 +7212,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:30",
             "duration_seconds": 210
         },
@@ -7031,6 +7244,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:08",
             "duration_seconds": 248
         },
@@ -7062,6 +7276,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:29",
             "duration_seconds": 269
         },
@@ -7093,6 +7308,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:48",
             "duration_seconds": 228
         },
@@ -7124,6 +7340,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "5:13",
             "duration_seconds": 313
         },
@@ -7155,6 +7372,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:01",
             "duration_seconds": 241
         },
@@ -7186,6 +7404,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:41",
             "duration_seconds": 281
         },
@@ -7225,6 +7444,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:34",
             "duration_seconds": 214
         },
@@ -7256,6 +7476,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:53",
             "duration_seconds": 293
         },
@@ -7287,6 +7508,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:32",
             "duration_seconds": 212
         },
@@ -7318,6 +7540,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:52",
             "duration_seconds": 232
         },
@@ -7349,6 +7572,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:39",
             "duration_seconds": 279
         },
@@ -7380,6 +7604,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:43",
             "duration_seconds": 223
         },
@@ -7411,6 +7636,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:55",
             "duration_seconds": 235
         },
@@ -7442,6 +7668,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:30",
             "duration_seconds": 270
         },
@@ -7473,6 +7700,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:33",
             "duration_seconds": 153
         },
@@ -7504,6 +7732,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:22",
             "duration_seconds": 202
         },
@@ -7535,6 +7764,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:42",
             "duration_seconds": 222
         },
@@ -7566,6 +7796,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:56",
             "duration_seconds": 176
         },
@@ -7597,6 +7828,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:51",
             "duration_seconds": 171
         },
@@ -7628,6 +7860,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:57",
             "duration_seconds": 177
         },
@@ -7659,6 +7892,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:00",
             "duration_seconds": 240
         },
@@ -7690,6 +7924,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:32",
             "duration_seconds": 212
         },
@@ -7721,6 +7956,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:39",
             "duration_seconds": 159
         },
@@ -7752,6 +7988,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:51",
             "duration_seconds": 231
         },
@@ -7783,6 +8020,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:59",
             "duration_seconds": 179
         },
@@ -7814,6 +8052,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:42",
             "duration_seconds": 222
         },
@@ -7845,6 +8084,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:53",
             "duration_seconds": 173
         },
@@ -7876,6 +8116,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:23",
             "duration_seconds": 203
         },
@@ -7899,6 +8140,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_OMV",
             "duration": "3:35",
             "duration_seconds": 215
         },
@@ -7930,6 +8172,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:56",
             "duration_seconds": 236
         },
@@ -7961,6 +8204,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:06",
             "duration_seconds": 186
         },
@@ -7992,6 +8236,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:48",
             "duration_seconds": 168
         },
@@ -8023,6 +8268,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:54",
             "duration_seconds": 174
         },
@@ -8054,6 +8300,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:18",
             "duration_seconds": 198
         },
@@ -8085,6 +8332,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "5:07",
             "duration_seconds": 307
         },
@@ -8116,6 +8364,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:50",
             "duration_seconds": 170
         },
@@ -8147,6 +8396,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:09",
             "duration_seconds": 249
         },
@@ -8178,6 +8428,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:27",
             "duration_seconds": 147
         },
@@ -8209,6 +8460,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:24",
             "duration_seconds": 144
         },
@@ -8240,6 +8492,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:51",
             "duration_seconds": 171
         },
@@ -8271,6 +8524,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:11",
             "duration_seconds": 131
         },
@@ -8302,6 +8556,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:18",
             "duration_seconds": 138
         },
@@ -8333,6 +8588,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:27",
             "duration_seconds": 147
         },
@@ -8364,6 +8620,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:58",
             "duration_seconds": 178
         },
@@ -8395,6 +8652,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:34",
             "duration_seconds": 154
         },
@@ -8426,6 +8684,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:18",
             "duration_seconds": 198
         },
@@ -8457,6 +8716,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:37",
             "duration_seconds": 157
         },
@@ -8465,11 +8725,7 @@
             "title": "Right Here",
             "artists": [
                 {
-                    "name": "Blaq Jerzee",
-                    "id": null
-                },
-                {
-                    "name": "Gyakie",
+                    "name": "Blaq Jerzee & Gyakie",
                     "id": null
                 }
             ],
@@ -8492,6 +8748,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:33",
             "duration_seconds": 213
         },
@@ -8523,6 +8780,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:03",
             "duration_seconds": 183
         },
@@ -8554,6 +8812,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:24",
             "duration_seconds": 204
         },
@@ -8585,6 +8844,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:23",
             "duration_seconds": 203
         },
@@ -8616,6 +8876,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:07",
             "duration_seconds": 187
         },
@@ -8651,6 +8912,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:05",
             "duration_seconds": 245
         },
@@ -8682,6 +8944,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:37",
             "duration_seconds": 217
         },
@@ -8717,6 +8980,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:30",
             "duration_seconds": 150
         },
@@ -8748,6 +9012,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:54",
             "duration_seconds": 234
         },
@@ -8779,6 +9044,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:51",
             "duration_seconds": 231
         },
@@ -8810,6 +9076,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:42",
             "duration_seconds": 222
         },
@@ -8841,6 +9108,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:59",
             "duration_seconds": 239
         },
@@ -8872,6 +9140,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:29",
             "duration_seconds": 209
         },
@@ -8903,6 +9172,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:51",
             "duration_seconds": 171
         },
@@ -8934,6 +9204,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:48",
             "duration_seconds": 228
         },
@@ -8965,6 +9236,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:30",
             "duration_seconds": 210
         },
@@ -8996,6 +9268,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:28",
             "duration_seconds": 208
         },
@@ -9027,6 +9300,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:43",
             "duration_seconds": 223
         },
@@ -9058,41 +9332,39 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:00",
             "duration_seconds": 240
         },
         {
-            "videoId": "IV-r5DF5TMM",
+            "videoId": "OypMMJ7BF9I",
             "title": "Soweto",
             "artists": [
                 {
-                    "name": "Victony",
-                    "id": null
-                },
-                {
-                    "name": "Tempoe",
+                    "name": "Victony & Tempoe",
                     "id": null
                 }
             ],
             "album": {
                 "name": "Outlaw",
-                "id": "MPREb_cYtpAHHY5yQ"
+                "id": "MPREb_0EUpps2z2m7"
             },
             "likeStatus": "INDIFFERENT",
             "thumbnails": [
                 {
-                    "url": "https://lh3.googleusercontent.com/PMKBOp2X4bDPXjYkzT_RhdEmwuZxADhC0i61Cvr-xk3hMW9NBCX8tLZis3CPDRKakPLME2x9e3ZrH4s=w60-h60-l90-rj",
+                    "url": "https://lh3.googleusercontent.com/rCO-L4OMcuR0UndQaq2VYZtiSR9YQLXftYJEOOWnBKh_rZFaWOq1ANS7kFBko_teTmhVhS6sAN9x8VoY6g=w60-h60-l90-rj",
                     "width": 60,
                     "height": 60
                 },
                 {
-                    "url": "https://lh3.googleusercontent.com/PMKBOp2X4bDPXjYkzT_RhdEmwuZxADhC0i61Cvr-xk3hMW9NBCX8tLZis3CPDRKakPLME2x9e3ZrH4s=w120-h120-l90-rj",
+                    "url": "https://lh3.googleusercontent.com/rCO-L4OMcuR0UndQaq2VYZtiSR9YQLXftYJEOOWnBKh_rZFaWOq1ANS7kFBko_teTmhVhS6sAN9x8VoY6g=w120-h120-l90-rj",
                     "width": 120,
                     "height": 120
                 }
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:28",
             "duration_seconds": 148
         },
@@ -9124,6 +9396,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:02",
             "duration_seconds": 242
         },
@@ -9155,6 +9428,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:35",
             "duration_seconds": 215
         },
@@ -9186,6 +9460,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:06",
             "duration_seconds": 186
         },
@@ -9217,6 +9492,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:53",
             "duration_seconds": 173
         },
@@ -9240,6 +9516,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_OMV",
             "duration": "5:45",
             "duration_seconds": 345
         },
@@ -9271,6 +9548,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:06",
             "duration_seconds": 186
         },
@@ -9302,6 +9580,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:34",
             "duration_seconds": 214
         },
@@ -9333,6 +9612,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:01",
             "duration_seconds": 241
         },
@@ -9364,6 +9644,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:43",
             "duration_seconds": 223
         },
@@ -9395,6 +9676,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:44",
             "duration_seconds": 164
         },
@@ -9430,6 +9712,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:22",
             "duration_seconds": 202
         },
@@ -9461,6 +9744,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:43",
             "duration_seconds": 223
         },
@@ -9492,6 +9776,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:25",
             "duration_seconds": 265
         },
@@ -9515,6 +9800,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_OMV",
             "duration": "3:55",
             "duration_seconds": 235
         },
@@ -9538,6 +9824,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_OMV",
             "duration": "3:58",
             "duration_seconds": 238
         },
@@ -9569,6 +9856,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:29",
             "duration_seconds": 269
         },
@@ -9608,6 +9896,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:33",
             "duration_seconds": 213
         },
@@ -9639,6 +9928,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:12",
             "duration_seconds": 252
         },
@@ -9674,6 +9964,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:55",
             "duration_seconds": 235
         },
@@ -9705,6 +9996,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:53",
             "duration_seconds": 233
         },
@@ -9736,6 +10028,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:29",
             "duration_seconds": 269
         },
@@ -9767,6 +10060,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:55",
             "duration_seconds": 295
         },
@@ -9775,7 +10069,7 @@
             "title": "We Are Young (feat. Janelle Mon\u00e1e)",
             "artists": [
                 {
-                    "name": "Fun.",
+                    "name": "fun.",
                     "id": "UCqR2ATuiV-PN2fWzuRYjcbg"
                 }
             ],
@@ -9798,6 +10092,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:11",
             "duration_seconds": 251
         },
@@ -9829,6 +10124,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:25",
             "duration_seconds": 205
         },
@@ -9860,6 +10156,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:56",
             "duration_seconds": 236
         },
@@ -9891,6 +10188,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:50",
             "duration_seconds": 230
         },
@@ -9930,6 +10228,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:11",
             "duration_seconds": 251
         },
@@ -9961,6 +10260,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:08",
             "duration_seconds": 188
         },
@@ -9992,6 +10292,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:59",
             "duration_seconds": 179
         },
@@ -10023,6 +10324,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:37",
             "duration_seconds": 217
         },
@@ -10054,6 +10356,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:22",
             "duration_seconds": 262
         },
@@ -10085,6 +10388,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:17",
             "duration_seconds": 197
         },
@@ -10116,6 +10420,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:25",
             "duration_seconds": 205
         },
@@ -10147,6 +10452,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:28",
             "duration_seconds": 148
         },
@@ -10178,6 +10484,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:23",
             "duration_seconds": 203
         },
@@ -10209,6 +10516,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:46",
             "duration_seconds": 226
         },
@@ -10248,6 +10556,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:06",
             "duration_seconds": 186
         },
@@ -10279,6 +10588,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:14",
             "duration_seconds": 194
         },
@@ -10310,6 +10620,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:28",
             "duration_seconds": 268
         },
@@ -10341,6 +10652,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:36",
             "duration_seconds": 216
         },
@@ -10372,6 +10684,7 @@
             ],
             "isAvailable": false,
             "isExplicit": false,
+            "videoType": null,
             "duration": "4:48",
             "duration_seconds": 288
         },
@@ -10403,6 +10716,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "5:01",
             "duration_seconds": 301
         },
@@ -10434,6 +10748,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:36",
             "duration_seconds": 216
         },
@@ -10465,6 +10780,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:48",
             "duration_seconds": 228
         },
@@ -10496,6 +10812,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:40",
             "duration_seconds": 220
         },
@@ -10527,6 +10844,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:43",
             "duration_seconds": 223
         },
@@ -10558,6 +10876,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "3:33",
             "duration_seconds": 213
         },
@@ -10589,6 +10908,7 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:38",
             "duration_seconds": 278
         },
@@ -10612,6 +10932,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_UGC",
             "duration": "4:23",
             "duration_seconds": 263
         },
@@ -10643,6 +10964,7 @@
             ],
             "isAvailable": true,
             "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "2:55",
             "duration_seconds": 175
         },
@@ -10674,9 +10996,1074 @@
             ],
             "isAvailable": true,
             "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
             "duration": "4:08",
             "duration_seconds": 248
+        },
+        {
+            "videoId": "JDb3ZZD4bA0",
+            "title": "Marvins Room",
+            "artists": [
+                {
+                    "name": "Drake",
+                    "id": "UCU6cE7pdJPc6DU2jSrKEsdQ"
+                }
+            ],
+            "album": {
+                "name": "Take Care (Deluxe)",
+                "id": "MPREb_7BhsOFvMuO4"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/18E7TwAgz27m5j9IbDra9jxalSFXQazLXcrEF0VnqjgYAHP32tgbghTb-H_-nHbiDLC_8MvXThkbIBvP=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/18E7TwAgz27m5j9IbDra9jxalSFXQazLXcrEF0VnqjgYAHP32tgbghTb-H_-nHbiDLC_8MvXThkbIBvP=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "5:47",
+            "duration_seconds": 347
+        },
+        {
+            "videoId": "l3V2ZkcUUR8",
+            "title": "Come Over",
+            "artists": [
+                {
+                    "name": "melvitto",
+                    "id": "UCWXCvwk1l1LvYDO4o4HQjcg"
+                },
+                {
+                    "name": "Gabzy",
+                    "id": "UC1Wbxd_b-I8Exv0Po5E8XiQ"
+                }
+            ],
+            "album": {
+                "name": "Summers",
+                "id": "MPREb_6cr21cOz65L"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/LaWEarRm_WyWqN7CmaXliLyqN9nMJlO9U8E0dcl18ZLXRPS85C0hWPaCPzdyyMB3BfAf-Qls2l7cLKCk=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/LaWEarRm_WyWqN7CmaXliLyqN9nMJlO9U8E0dcl18ZLXRPS85C0hWPaCPzdyyMB3BfAf-Qls2l7cLKCk=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "4:09",
+            "duration_seconds": 249
+        },
+        {
+            "videoId": "d3B-wKlskoo",
+            "title": "attention",
+            "artists": [
+                {
+                    "name": "Omah Lay",
+                    "id": "UC60F2Ngz1ZkAP6v_PwgSY0A"
+                },
+                {
+                    "name": "Justin Bieber",
+                    "id": "UCGvj8kfUV5Q6lzECIrGY19g"
+                }
+            ],
+            "album": {
+                "name": "Boy Alone",
+                "id": "MPREb_LIVxn0v1BNr"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/wWk7naAgSrCWA8T41ZIHHyfJ_6b4Mvmwx1A8JhItAjWKi39VDWFglenQCkIpbHJQBmQyozcDBWnaLVXy=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/wWk7naAgSrCWA8T41ZIHHyfJ_6b4Mvmwx1A8JhItAjWKi39VDWFglenQCkIpbHJQBmQyozcDBWnaLVXy=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "3:01",
+            "duration_seconds": 181
+        },
+        {
+            "videoId": "UjVB1TRNy88",
+            "title": "Follow You",
+            "artists": [
+                {
+                    "name": "Fiokee, Chike, & Gyakie",
+                    "id": null
+                }
+            ],
+            "album": {
+                "name": "Follow You",
+                "id": "MPREb_OVc8TUxtRxH"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/m1gpmufM6_kiqpMv7C4yR1we6Z33rzxt5CE703Fh8BAABHJA3SG1mZ--CUiOx_bP4ZSxSHXcwDuQGb088Q=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/m1gpmufM6_kiqpMv7C4yR1we6Z33rzxt5CE703Fh8BAABHJA3SG1mZ--CUiOx_bP4ZSxSHXcwDuQGb088Q=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "3:12",
+            "duration_seconds": 192
+        },
+        {
+            "videoId": "gGwN25z7FrE",
+            "title": "Anti-Hero",
+            "artists": [
+                {
+                    "name": "Taylor Swift",
+                    "id": "UCPC0L1d253x-KuMNwa05TpA"
+                }
+            ],
+            "album": {
+                "name": "Midnights",
+                "id": "MPREb_z0ABWl3jaT0"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/omCs21jqwK4Ss_VZxPFKwQP5z0UY0vi_8gXu4XNxHKDgE-GHYHWkIw80XR1uzFgdyhM3PvVUZeZ8iAfF=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/omCs21jqwK4Ss_VZxPFKwQP5z0UY0vi_8gXu4XNxHKDgE-GHYHWkIw80XR1uzFgdyhM3PvVUZeZ8iAfF=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "3:21",
+            "duration_seconds": 201
+        },
+        {
+            "videoId": "jNpK13xQIdI",
+            "title": "Mama Maradona",
+            "artists": [
+                {
+                    "name": "Vector",
+                    "id": "UCCsgq_4leY82ad-MaGw8BAQ"
+                },
+                {
+                    "name": "Wande Coal",
+                    "id": "UCy51adLS32LxWLM5a_ixezw"
+                }
+            ],
+            "album": {
+                "name": "Mama Maradona",
+                "id": "MPREb_BQW1neG1GEp"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/dlFB-n6H1fHN6SFEfnMLQeJ4LANQ3INOKhOH74T886AJJZXqKaNAqFL3xObCLt7vwFC_wXLPjECL4OE=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/dlFB-n6H1fHN6SFEfnMLQeJ4LANQ3INOKhOH74T886AJJZXqKaNAqFL3xObCLt7vwFC_wXLPjECL4OE=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "2:56",
+            "duration_seconds": 176
+        },
+        {
+            "videoId": "FKDp3oQAhAo",
+            "title": "Philo",
+            "artists": [
+                {
+                    "name": "Bella Shmurda",
+                    "id": "UCeM_6KLtHjn1xd3fShyqONQ"
+                },
+                {
+                    "name": "Omah Lay",
+                    "id": "UC60F2Ngz1ZkAP6v_PwgSY0A"
+                }
+            ],
+            "album": {
+                "name": "Hypertension",
+                "id": "MPREb_QZriSRajXw4"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/oiaA5qna6ADdu4eqqsQO8WRLW5JoJMNAq4B6PrdA5wJd5wTcgYqb9fnX9eAg2K6pXE7I1neTVV8PfP0o=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/oiaA5qna6ADdu4eqqsQO8WRLW5JoJMNAq4B6PrdA5wJd5wTcgYqb9fnX9eAg2K6pXE7I1neTVV8PfP0o=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "2:46",
+            "duration_seconds": 166
+        },
+        {
+            "videoId": "cARDdmvOH2c",
+            "title": "Hypnotize",
+            "artists": [
+                {
+                    "name": "S High",
+                    "id": "UCoX-os0znbA7RR1CXuDkzNA"
+                },
+                {
+                    "name": "Zinoleesky",
+                    "id": "UCh6TfWpZo3DFHxIWJv9kRQw"
+                },
+                {
+                    "name": "Victony",
+                    "id": "UCh-VZa381UUDND3OtMKLudg"
+                }
+            ],
+            "album": {
+                "name": "Hypnotize",
+                "id": "MPREb_wxbGcC2ct2q"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/arux348baKguQ7tsLU3mpXP0tH-ZtoDZXrOBQhJhh3AX5kjArypARwt79tVahbbQufMmwswlkMkbq7E=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/arux348baKguQ7tsLU3mpXP0tH-ZtoDZXrOBQhJhh3AX5kjArypARwt79tVahbbQufMmwswlkMkbq7E=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "3:27",
+            "duration_seconds": 207
+        },
+        {
+            "videoId": "RcA0i__73BY",
+            "title": "Bloody Samaritan (Cover)",
+            "artists": [
+                {
+                    "name": "Loud Urban Choir",
+                    "id": "UCGaNSmetFWuR_fsdwhalpNA"
+                }
+            ],
+            "album": {
+                "name": "Bloody Samaritan (Cover)",
+                "id": "MPREb_oe2m5iYYodg"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/HMeMgctH7eTpm0Kv7rn1z46UmMwsqBIxnNJ-o7N9uH3-mx5o2WiKxZ7zh1icKtkjNvEacU5sWgTunK_5Kw=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/HMeMgctH7eTpm0Kv7rn1z46UmMwsqBIxnNJ-o7N9uH3-mx5o2WiKxZ7zh1icKtkjNvEacU5sWgTunK_5Kw=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "1:05",
+            "duration_seconds": 65
+        },
+        {
+            "videoId": "thXd_T_xpFU",
+            "title": "Dupe",
+            "artists": [
+                {
+                    "name": "Asake",
+                    "id": "UCCjfbcoH0ZYT0r1jScDHJMg"
+                }
+            ],
+            "album": {
+                "name": "Mr. Money With The Vibe",
+                "id": "MPREb_v1a92qIg4Lf"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/dW8btZiPnjEHeeHWxUtGX7kfExmntBAxU_Koo9I4Ineyou1dN8Bpmjl6qomtDdxWnP_3X49KNiFvOMLbTw=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/dW8btZiPnjEHeeHWxUtGX7kfExmntBAxU_Koo9I4Ineyou1dN8Bpmjl6qomtDdxWnP_3X49KNiFvOMLbTw=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "2:43",
+            "duration_seconds": 163
+        },
+        {
+            "videoId": "_VXUiAJi5KY",
+            "title": "In Da Club",
+            "artists": [
+                {
+                    "name": "50 Cent",
+                    "id": "UCOcnYBwT1jb6EHlS0cwhNkA"
+                }
+            ],
+            "album": {
+                "name": "Get Rich Or Die Tryin'",
+                "id": "MPREb_7Sxbqgh6MEY"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/YV7PApb2Darso5SCVlx7VzJJunWNXiohh9m4172J2iuxPJYguQIkgqg1fiMwX56zt07Cx8CAlNrbP13B=w60-h60-s-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/YV7PApb2Darso5SCVlx7VzJJunWNXiohh9m4172J2iuxPJYguQIkgqg1fiMwX56zt07Cx8CAlNrbP13B=w120-h120-s-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "3:13",
+            "duration_seconds": 193
+        },
+        {
+            "videoId": "gvVkwPw0low",
+            "title": "On the Moon",
+            "artists": [
+                {
+                    "name": "Chike",
+                    "id": "UCD6eR__YSGlBQ0rpx1Do6Uw"
+                }
+            ],
+            "album": {
+                "name": "The Brother's Keeper",
+                "id": "MPREb_dXoOf5MpBla"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/OCASBtXKxqJRDOXHSgl2Y-97IAD93jev8qC9LuTDfoV4tW81MK_gMSUUhHzx5XjXw-H8dktuPCYHYngN=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/OCASBtXKxqJRDOXHSgl2Y-97IAD93jev8qC9LuTDfoV4tW81MK_gMSUUhHzx5XjXw-H8dktuPCYHYngN=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "3:19",
+            "duration_seconds": 199
+        },
+        {
+            "videoId": "dWXaJiMTYT0",
+            "title": "Too Hotty (feat. Eurielle)",
+            "artists": [
+                {
+                    "name": "Quality Control",
+                    "id": "UCVeoAL2a2R6tcGhPmZhB8vA"
+                },
+                {
+                    "name": "Migos",
+                    "id": "UCF5D9qC1TAQnFWa4oHuBZcA"
+                }
+            ],
+            "album": {
+                "name": "Too Hotty",
+                "id": "MPREb_7jYTvbhkUH0"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/NQyrQv9_e04IQ2qHagcDOyAMum8DkdK3wbetcFZlOUqOwef-t4OhtZZQ4UdiyfEjoMXzkbqfsNonoI5u=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/NQyrQv9_e04IQ2qHagcDOyAMum8DkdK3wbetcFZlOUqOwef-t4OhtZZQ4UdiyfEjoMXzkbqfsNonoI5u=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "4:58",
+            "duration_seconds": 298
+        },
+        {
+            "videoId": "oW2rCo9U2VQ",
+            "title": "APESHIT",
+            "artists": [
+                {
+                    "name": "THE CARTERS",
+                    "id": "UC8FsfQbnHUnft5ZfoXpD-kw"
+                }
+            ],
+            "album": {
+                "name": "EVERYTHING IS LOVE",
+                "id": "MPREb_6lxlo5E5FSQ"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/4K8AUjqhGARMBQoBiTZBdTTeMoihy3hldUgvBaLEPF5jrrW00t_l9HqNuLkVh7grjBAE1qM0uKZUmtg=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/4K8AUjqhGARMBQoBiTZBdTTeMoihy3hldUgvBaLEPF5jrrW00t_l9HqNuLkVh7grjBAE1qM0uKZUmtg=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "4:25",
+            "duration_seconds": 265
+        },
+        {
+            "videoId": "OZHjWc0Ssvk",
+            "title": "Wolves",
+            "artists": [
+                {
+                    "name": "Kanye West",
+                    "id": "UCRY5dYsbIN5TylSbd7gVnZg"
+                }
+            ],
+            "album": {
+                "name": "The Life Of Pablo",
+                "id": "MPREb_GDKC8gIBAVI"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/-XW9Ll8MgSD3JrkxBYWRA7VPbPKdw9oPfKfSRAfhXaURmSyXxneisRcOkrHkhK6r3TYg53zqCXb6yOkI=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/-XW9Ll8MgSD3JrkxBYWRA7VPbPKdw9oPfKfSRAfhXaURmSyXxneisRcOkrHkhK6r3TYg53zqCXb6yOkI=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "5:02",
+            "duration_seconds": 302
+        },
+        {
+            "videoId": "iRyKLQWY9CA",
+            "title": "Famous",
+            "artists": [
+                {
+                    "name": "Kanye West",
+                    "id": "UCRY5dYsbIN5TylSbd7gVnZg"
+                }
+            ],
+            "album": {
+                "name": "The Life Of Pablo",
+                "id": "MPREb_GDKC8gIBAVI"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/-XW9Ll8MgSD3JrkxBYWRA7VPbPKdw9oPfKfSRAfhXaURmSyXxneisRcOkrHkhK6r3TYg53zqCXb6yOkI=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/-XW9Ll8MgSD3JrkxBYWRA7VPbPKdw9oPfKfSRAfhXaURmSyXxneisRcOkrHkhK6r3TYg53zqCXb6yOkI=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "3:17",
+            "duration_seconds": 197
+        },
+        {
+            "videoId": "fWD9GF-Ogf4",
+            "title": "Real Friends",
+            "artists": [
+                {
+                    "name": "Kanye West",
+                    "id": "UCRY5dYsbIN5TylSbd7gVnZg"
+                }
+            ],
+            "album": {
+                "name": "The Life Of Pablo",
+                "id": "MPREb_ZIbQK9RFLQY"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/aPKvJlUpWx0i61bLgr5VGYadl7jzK-mtJTt5utKUkZgjLB98IHqIaptWpsJpJQ-fLIYIZ0j7cJN2cYjs4Q=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/aPKvJlUpWx0i61bLgr5VGYadl7jzK-mtJTt5utKUkZgjLB98IHqIaptWpsJpJQ-fLIYIZ0j7cJN2cYjs4Q=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "4:11",
+            "duration_seconds": 251
+        },
+        {
+            "videoId": "y06KnzoIgeg",
+            "title": "Money & Love",
+            "artists": [
+                {
+                    "name": "Wizkid",
+                    "id": "UC25DGtgYk5TwdksvtpeWYvA"
+                }
+            ],
+            "album": {
+                "name": "More Love, Less Ego",
+                "id": "MPREb_p63bWhW1GPx"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/kM_xNM1Uy6Hj4KnsCJ25klhbakCDo4oowEqXgHg6M7aHUM2Docm9y0UFHAohfSUpZwbrCdEOADQMKfTE=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/kM_xNM1Uy6Hj4KnsCJ25klhbakCDo4oowEqXgHg6M7aHUM2Docm9y0UFHAohfSUpZwbrCdEOADQMKfTE=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "3:12",
+            "duration_seconds": 192
+        },
+        {
+            "videoId": "Bz-YGUYfRxs",
+            "title": "Vanilla",
+            "artists": [
+                {
+                    "name": "Burna Boy",
+                    "id": "UCr61sufuLt7_eB7ak1bXHIg"
+                }
+            ],
+            "album": {
+                "name": "Love, Damini",
+                "id": "MPREb_If75wr3HkMf"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/dUbOraoMwr04EWjsA8bbXBXBSj7oSQaJP8wv2SuNaVwEWiBFf_KTcDE0Zp3JudEinuaw8_ypXVotXf7S=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/dUbOraoMwr04EWjsA8bbXBXBSj7oSQaJP8wv2SuNaVwEWiBFf_KTcDE0Zp3JudEinuaw8_ypXVotXf7S=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "2:36",
+            "duration_seconds": 156
+        },
+        {
+            "videoId": "bvi-WHk7lbo",
+            "title": "Put It All on Me (feat. Ella Mai)",
+            "artists": [
+                {
+                    "name": "Ed Sheeran",
+                    "id": "UClmXPfaYhXOYsNn_QUyheWQ"
+                }
+            ],
+            "album": {
+                "name": "No.6 Collaborations Project",
+                "id": "MPREb_VIXO8xFh4IZ"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/2rSqxXTYIox46twhc2zC73tSPuzHz9XBx04tojSXQmXN4SK7NgYdwX5PgqcX7reoPG_3WrjnIu-hbm5G=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/2rSqxXTYIox46twhc2zC73tSPuzHz9XBx04tojSXQmXN4SK7NgYdwX5PgqcX7reoPG_3WrjnIu-hbm5G=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "3:18",
+            "duration_seconds": 198
+        },
+        {
+            "videoId": "RyfjSZ-NfAU",
+            "title": "Diana (feat. Shenseea)",
+            "artists": [
+                {
+                    "name": "Fireboy DML",
+                    "id": "UCt7KNkaOhBpesOJHMx2ASnw"
+                },
+                {
+                    "name": "Chris Brown",
+                    "id": "UCMXDyVR2tclKWhbqNforSyA"
+                }
+            ],
+            "album": {
+                "name": "Playboy",
+                "id": "MPREb_Pvay5YyGRHo"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/OUos8c49-9P_93B6Kkx1FVDk_be9eyRVSJhO1lZ73Xp6ELmi_1ShVcGTX9zTvPFa3BCragubWMzz4j_a1Q=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/OUos8c49-9P_93B6Kkx1FVDk_be9eyRVSJhO1lZ73Xp6ELmi_1ShVcGTX9zTvPFa3BCragubWMzz4j_a1Q=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "3:53",
+            "duration_seconds": 233
+        },
+        {
+            "videoId": "ahG7yMiHss0",
+            "title": "Intro",
+            "artists": [
+                {
+                    "name": "Davido",
+                    "id": "UCehhqT7086Y04HAQ121lu3g"
+                }
+            ],
+            "album": {
+                "name": "A Good Time",
+                "id": "MPREb_LJmJYkoXV9J"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/Zdldsdg9_DSrk5c7ghTmiPYKeU4hGikzhg2Euf_Nhkyzlv-GoEa-7TUHvxVEttEnoLwkfEQ-TkgTYWtt=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/Zdldsdg9_DSrk5c7ghTmiPYKeU4hGikzhg2Euf_Nhkyzlv-GoEa-7TUHvxVEttEnoLwkfEQ-TkgTYWtt=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "3:24",
+            "duration_seconds": 204
+        },
+        {
+            "videoId": "F5NXSbZk5AI",
+            "title": "Bed Peace (feat. Childish Gambino)",
+            "artists": [
+                {
+                    "name": "Jhen\u00e9 Aiko (feat. Childish Gambino)",
+                    "id": "UCZONOh3FvcDpTcsnDRsr7OQ"
+                }
+            ],
+            "album": {
+                "name": "Sail Out",
+                "id": "MPREb_Rj2gyTTnn5V"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/4fWn3higsa4uB_AAqw6jihIdIOrNs-4cOjteJ2LK1saSv_YExwnZ4zvVvrCZK2RVgSplxcN-Fyulpjpa=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/4fWn3higsa4uB_AAqw6jihIdIOrNs-4cOjteJ2LK1saSv_YExwnZ4zvVvrCZK2RVgSplxcN-Fyulpjpa=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "4:16",
+            "duration_seconds": 256
+        },
+        {
+            "videoId": "C_ybvzfyJmw",
+            "title": "SHOWING OFF HER BODY",
+            "artists": [
+                {
+                    "name": "DaBaby",
+                    "id": "UCtHsn1Jx_POCdTcR-ulootg"
+                },
+                {
+                    "name": "Davido",
+                    "id": "UCehhqT7086Y04HAQ121lu3g"
+                }
+            ],
+            "album": {
+                "name": "SHOWING OFF HER BODY",
+                "id": "MPREb_DHUqVvL7YX7"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/8fawXlsS55C5IGxXQCRubr_mBXkJi6aOJubfXIyrzicmF5D8yCHbuytXSkf4QNw2y3Ket_kKnS95l9L9=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/8fawXlsS55C5IGxXQCRubr_mBXkJi6aOJubfXIyrzicmF5D8yCHbuytXSkf4QNw2y3Ket_kKnS95l9L9=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "3:33",
+            "duration_seconds": 213
+        },
+        {
+            "videoId": "yCeECqXP8kk",
+            "title": "Bloody Samaritan",
+            "artists": [
+                {
+                    "name": "Ayra Starr",
+                    "id": "UCO4TFKYiSDo7vOQC04mr7Fg"
+                }
+            ],
+            "album": {
+                "name": "Bloody Samaritan",
+                "id": "MPREb_z2xiPWpzjbt"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/cRjo_f-ClJ26wPpQG2WXx4pGPzqtepCTSLKQN6o16mL_ZmTHvfcFIxcKAiy26jqHMRUsJCk4Lx8Dlzq6LQ=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/cRjo_f-ClJ26wPpQG2WXx4pGPzqtepCTSLKQN6o16mL_ZmTHvfcFIxcKAiy26jqHMRUsJCk4Lx8Dlzq6LQ=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "3:07",
+            "duration_seconds": 187
+        },
+        {
+            "videoId": "bnPkAQy05Ag",
+            "title": "Rollercoaster (feat. J Balvin)",
+            "artists": [
+                {
+                    "name": "Burna Boy",
+                    "id": "UCr61sufuLt7_eB7ak1bXHIg"
+                }
+            ],
+            "album": {
+                "name": "Love, Damini",
+                "id": "MPREb_If75wr3HkMf"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/dUbOraoMwr04EWjsA8bbXBXBSj7oSQaJP8wv2SuNaVwEWiBFf_KTcDE0Zp3JudEinuaw8_ypXVotXf7S=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/dUbOraoMwr04EWjsA8bbXBXBSj7oSQaJP8wv2SuNaVwEWiBFf_KTcDE0Zp3JudEinuaw8_ypXVotXf7S=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "3:08",
+            "duration_seconds": 188
+        },
+        {
+            "videoId": "nD_TSAVfXdE",
+            "title": "Pull Up",
+            "artists": [
+                {
+                    "name": "Burna Boy",
+                    "id": "UCr61sufuLt7_eB7ak1bXHIg"
+                }
+            ],
+            "album": {
+                "name": "African Giant",
+                "id": "MPREb_uBsMuZSnmah"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/wC3OAonBkEi-jlzDFknoLBe8KK2wGDSMt7OWoqO2BmzyHe1x24hwGp6KKVrOz5ZhMyDWAJ-j6m7TsAzYNQ=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/wC3OAonBkEi-jlzDFknoLBe8KK2wGDSMt7OWoqO2BmzyHe1x24hwGp6KKVrOz5ZhMyDWAJ-j6m7TsAzYNQ=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "3:08",
+            "duration_seconds": 188
+        },
+        {
+            "videoId": "XRizYtQyOLM",
+            "title": "Privacy",
+            "artists": [
+                {
+                    "name": "Chris Brown",
+                    "id": "UCMXDyVR2tclKWhbqNforSyA"
+                }
+            ],
+            "album": {
+                "name": "Heartbreak on a Full Moon",
+                "id": "MPREb_a1Rw20hUMLK"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/DUy4Ss8UNQNnrUa6mIXpbODPwN_c6zXCrzI_RxKqzOYuwtk17MH0nUqRxo2uxDcfHceaoRWT04EGVug=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/DUy4Ss8UNQNnrUa6mIXpbODPwN_c6zXCrzI_RxKqzOYuwtk17MH0nUqRxo2uxDcfHceaoRWT04EGVug=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "3:41",
+            "duration_seconds": 221
+        },
+        {
+            "videoId": "FyvYcJIc0Og",
+            "title": "Miss You Bad",
+            "artists": [
+                {
+                    "name": "Mr Eazi",
+                    "id": "UCbZKI-afOAF_gewoFoY-oXg"
+                },
+                {
+                    "name": "Burna Boy",
+                    "id": "UCr61sufuLt7_eB7ak1bXHIg"
+                }
+            ],
+            "album": {
+                "name": "Life is Eazi, Vol. 2 - Lagos to London",
+                "id": "MPREb_qnNrabIG6Tx"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/V8Add2Cgo0uaGqr1AY2tHFLn3Apn732b3bTGRwKDyVOyEgBHx0ugUfPtyHZIG3OplikzPixKVpdT467b=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/V8Add2Cgo0uaGqr1AY2tHFLn3Apn732b3bTGRwKDyVOyEgBHx0ugUfPtyHZIG3OplikzPixKVpdT467b=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": true,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "2:57",
+            "duration_seconds": 177
+        },
+        {
+            "videoId": "vtWjk_CiSQI",
+            "title": "Stand Strong (feat. Sunday Service Choir)",
+            "artists": [
+                {
+                    "name": "Davido",
+                    "id": "UCehhqT7086Y04HAQ121lu3g"
+                }
+            ],
+            "album": {
+                "name": "Stand Strong",
+                "id": "MPREb_hnPmt4bPLdO"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/nwQV0gLGLpaf6E6tN02voDy7FFg40129GUdNwKJET-MVS5UJBNO7smlpYvaM8bHpbRAM3R8HiK8_7WoPzA=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/nwQV0gLGLpaf6E6tN02voDy7FFg40129GUdNwKJET-MVS5UJBNO7smlpYvaM8bHpbRAM3R8HiK8_7WoPzA=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "3:03",
+            "duration_seconds": 183
+        },
+        {
+            "videoId": "dC9QIUKviJU",
+            "title": "Blank Space",
+            "artists": [
+                {
+                    "name": "Taylor Swift",
+                    "id": "UCPC0L1d253x-KuMNwa05TpA"
+                }
+            ],
+            "album": {
+                "name": "1989 (Deluxe)",
+                "id": "MPREb_JiAQrbUtBdP"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/ZLkMUVjCgfC5YDCc0aF6vpfQWOp3CMjIxUElYqLPR4i9dEkJv9u9bgaioKNgg8stkW1FgjEpbW1wts6g=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/ZLkMUVjCgfC5YDCc0aF6vpfQWOp3CMjIxUElYqLPR4i9dEkJv9u9bgaioKNgg8stkW1FgjEpbW1wts6g=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "3:51",
+            "duration_seconds": 231
+        },
+        {
+            "videoId": "Njt2NV24BKY",
+            "title": "Bella (feat. Wizkid)",
+            "artists": [
+                {
+                    "name": "MHD",
+                    "id": "UCWzpV6bKCGLgZ5uyjZRRkIQ"
+                }
+            ],
+            "album": {
+                "name": "Bella",
+                "id": "MPREb_DSYFuutwe5Y"
+            },
+            "likeStatus": "INDIFFERENT",
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/BtN_0uw4EULmZt9wrmNZGk7d_gQ5_UTJdzyMQlpzFjGVaeIK9H7ZH9NH-k63r5vi7_eRSbOCnNkG4eva=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/BtN_0uw4EULmZt9wrmNZGk7d_gQ5_UTJdzyMQlpzFjGVaeIK9H7ZH9NH-k63r5vi7_eRSbOCnNkG4eva=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isAvailable": true,
+            "isExplicit": false,
+            "videoType": "MUSIC_VIDEO_TYPE_ATV",
+            "duration": "3:06",
+            "duration_seconds": 186
         }
     ],
-    "duration_seconds": 73215
+    "duration_seconds": 79837
 }
