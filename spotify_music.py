@@ -146,7 +146,7 @@ def convert_yt_to_spotify(yt_playlist):
 # that are different, use list_similarity() to determine their difference and know the benchmark
 # for your condition.
 
-# Rewrite the function descriptions match their current parameters and returns.
+# Rewrite the function descriptions to match their current parameters and returns.
 
 # Figure out a way to utilze year during comparism. Right now, you're not making use of it.
 
