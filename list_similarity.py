@@ -3,22 +3,12 @@
 # using "|" operator + "&" operator + set()
 
 # initialize lists
-test_list1 = [
-    "Pete Edocxhie",
-    "Theresa Onuozrah",
-    "Flavcour",
-    "Phynco",
-]
-test_list2 = [
-    "Larry Gaaga",
-    "Theresa Onuorah",
-    "Flavour",
-    "Phyno"
-]
+test_list1 = ['ckay', 'focalistic', 'davido', 'abidoza']
+test_list2 = ["ckay"]
 
 # printing original lists
-print("The original list 1 is : " + str(test_list1))
-print("The original list 2 is : " + str(test_list2))
+print("The original list 1 is : ", test_list1)
+print("The original list 2 is : ", test_list2)
 
 # Percentage similarity of lists
 # using "|" operator + "&" operator + set()
@@ -27,4 +17,4 @@ def list_similarity(list_1, list_2):
     return result
 
 # printing result
-print("Percentage similarity among lists is : " + str(list_similarity(test_list1, test_list2)))
+print("Percentage similarity among lists is : ", list_similarity(test_list1, test_list2))

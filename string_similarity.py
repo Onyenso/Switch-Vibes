@@ -6,9 +6,9 @@ def string_similarity(str1, str2):
     return result.ratio()
 
 
-str1 = "Kiss Daniel"
-str2 = "Kizz Daniel"
-print(f"{str1} vs {str2} = {string_similarity(str1,str2)}\n")
+str1 = ["Kiss Daniel"]
+str2 = ["Kizz Daniel"]
+print(f"{str1} vs {str2} = {string_similarity(str(str1),str(str2))}\n")
 
 str1 = "Ariana Grande ft. Nicki Minaj"
 str2 = "Ariana Grande"
@@ -35,16 +35,10 @@ str2 = "Sarkodie"
 print(f"{str1} vs {str2} = {string_similarity(str1,str2)}\n")
 
 str1 = [
-    "Pete Edochie",
-    "Theresa Onuorah",
-    "Flavour",
-    "Phyno",
+   "olakira"
 ]
 str2 = [
-    "Larry Gaaga",
-    "Theresa Onuorah",
-    "Flavour",
-    "Phyno"
+    "olakira", "davido"
 ]
 
-print(f"{str1} vs {str2} = {string_similarity(str1,str2)}\n")
+print(f"{str(str1)} vs {str2} = {string_similarity(str(str1),str(str2))}\n")

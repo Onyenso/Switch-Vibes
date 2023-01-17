@@ -4,14 +4,6 @@ import json
 from spotify_music import convert_yt_to_spotify
 
 
-"""
-Things to check for YT to Spotify and vice versa:
-# track title.lower
-# duration_difference ! >= 10 secs
-# artist name
-# year
-"""
-
 yt = YTMusic()
 
 
@@ -34,6 +26,7 @@ def get_yt_playlist(playlist_id):
 
     playlist = yt.get_playlist(playlistId=playlist_id, limit=None)
     tracks = playlist["tracks"]
+    title = playlist["title"]
     parsed_playlist_tracks = []
 
     for item in tracks:
@@ -62,14 +55,14 @@ def get_yt_playlist(playlist_id):
             "title": item["title"],
             "artists": [artists["name"] for artists in item["artists"]],
             "year": year,
-            "duration_seconds": duration_seconds,
+            "duration_seconds": int(duration_seconds),
             "video": video
         })
 
         print(f"Adding {item['title']}...")
 
     print("================YT Music Done========================")
-    return parsed_playlist_tracks
+    return {"tracks": parsed_playlist_tracks, "title": title}
 
 
 # jamming of genitals
@@ -82,19 +75,21 @@ id2 = "PL3Kj3Wrtj3wJLW7tK-kKz-MBz6omQNFeG"
 
 # get YT playlist
 # raw_yt_playlist = yt.get_playlist(id2, limit=None)
-# yt_playlist = get_yt_playlist(id2)
+yt_playlist = get_yt_playlist(id)
 
 # write parsed YT playlist to file
-# with open("yt_playlist2.json", "w") as file:
-#     json.dump(yt_playlist, file, indent=4)
+with open("yt_playlist4.json", "w") as file:
+    json.dump(yt_playlist["tracks"], file, indent=4)
 
 # get parsed YT playlist from a file
-# with open("yt_playlist1.json") as file:
+# with open("yt_playlist2.json") as file:
 #     yt_playlist = json.loads(file.read())
 
 # convert parsed YT playlist to Spotify playlist and write to a file
-# with open("spotify_playlist2.json", "w") as file:
-#     json.dump(convert_yt_to_spotify(yt_playlist), file, indent=4)
+with open("spotify_playlist4.json", "w") as file:
+    json.dump(convert_yt_to_spotify(yt_playlist["tracks"], yt_playlist["title"]), file, indent=4)
 
-print(json.dumps(yt.get_song(videoId="FKkfCUZdU3s"), indent=4))
+# Get detail of a song
+# print(json.dumps(yt.get_song(videoId="FKkfCUZdU3s"), indent=4))
+
 print("Done.")
