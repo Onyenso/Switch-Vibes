@@ -6,7 +6,7 @@ from datetime import datetime
 
 nulls = 0
 
-with open("spotify_playlist3.json") as file:
+with open("spotify_playlist4.json") as file:
     content = file.read()
     content = json.loads(content)
     for track in content:
@@ -17,3 +17,4 @@ print("\nFILE:", file.name)
 print("NO. OF SONGS:", len(content))
 print("NULLS:", nulls)
 print("PERCENTAGE OF NULS:", nulls / (len(content)) * 100, "%\n")
+
