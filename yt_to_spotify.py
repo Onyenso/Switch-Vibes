@@ -83,7 +83,6 @@ def get_yt_playlist(playlist_id):
         print(f"Found {item['title']} on YT Music...")
 
     print("\n================YT Music Done========================\n")
-
     return {"tracks": parsed_playlist_tracks, "title": title}
 
 
@@ -138,8 +137,7 @@ def convert_yt_to_spotify(yt_playlist, name):
         )
 
         # If track is found, add to parsed playlist else add track to nulls
-        parsed_spotify_playlist.append(sp_track) if sp_track else \
-        nulls.append({
+        parsed_spotify_playlist.append(sp_track) if sp_track else nulls.append({
             "title": track["title"],
             "artists": track["artists"]
         })

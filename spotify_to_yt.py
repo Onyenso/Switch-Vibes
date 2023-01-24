@@ -2,6 +2,8 @@
 
 import json
 from spotipy import Spotify, SpotifyClientCredentials, SpotifyOAuth
+from ytmusicapi import YTMusic
+from utils import string_similarity, list_similarity
 
 SPOTIFY_REDIRECT_URI = "http://example.com"
 SPOTIFY_BASE_URL = "https://api.spotify.com/v1"
@@ -19,13 +21,47 @@ auth_manager = SpotifyOAuth(
 )
 
 sp = Spotify(auth_manager=auth_manager)
+yt = YTMusic()
 
 
 def get_spotify_playlist(playlist_id):
     """
-    Get's a Spotify playlist's raw data and pareses it.
+    Gets a Spotify playlist's raw data and pareses it and returns a dictionary which
+    includes a key, items, whose value is a list of dictionaries. Each dictionary in this list
+    represents a track from the Spotify playlist.
+
+    :param playlist_id: a string representing the id of the playlist.
+
+    :return parsed_playlist_tracks: a dictionary which includes a list of dictionaries,
+    where each dictionary represents a track.
+
+    E.g. of a return value might look like:
+    {
+        "id": "0Mpj7oqduJ24uMGy5tC8ff",
+        "name": "AlphaDev's playlist",
+        "tracks": {
+            "items": [
+                {
+                    "track": {
+                        "artists": [
+                            {
+                                "name": "John Legend"
+                            },
+                            {
+                                "name": "Ludacris"
+                            }
+                        ],
+                        "duration_ms": 239453,
+                        "name": "Tonight (Best You Ever Had) (feat. Ludacris)"
+                    }
+                }
+            ]
+            next: None
+        },
+    }
     """
-    
+    print("\n================Searching Spotify========================\n")
+
     # Get the first 100 tracks from playlist
     parsed_playlist_tracks = sp.playlist(
         playlist_id=playlist_id,
@@ -35,7 +71,7 @@ def get_spotify_playlist(playlist_id):
     next = parsed_playlist_tracks["tracks"]["next"]
     offset = 0
 
-    # Get the remaining tracks
+    # Get the remaining tracks if there's more
     while next is not None:
         offset += 100
 
@@ -49,7 +85,110 @@ def get_spotify_playlist(playlist_id):
         next = next_tracks["next"]
         parsed_playlist_tracks["tracks"]["next"] = next
 
+    print("\n================Spotify Done========================\n")
     return parsed_playlist_tracks
+
+
+def convert_spotify_to_yt(spotify_playlist):
+    parsed_yt_playlist = []
+    nulls = []
+    sp_playlist_name = spotify_playlist["name"]
+    sp_tracks = spotify_playlist["tracks"]["items"]
+
+    print("\n================Searching YT Music========================\n")
+
+    for sp_track in sp_tracks:
+        sp_artists = ""
+
+        for sp_artist in sp_track["track"]["artists"]:
+            sp_artists += sp_artist["name"] + " "
+            
+        sp_artists = sp_artists.strip()
+        q = f"{sp_track['track']['name']} {sp_artists}"
+
+        yt_track = search_for_yt_track(
+            query=q,
+            title=sp_track["track"]["name"],
+            artists=[artist['name'].lower() for artist in sp_track["track"]["artists"]],
+            duration=int(sp_track["track"]["duration_ms"] / 1000)
+        )
+    
+        parsed_yt_playlist.append(yt_track) if yt_track else nulls.append({
+            "title": sp_track['track']["name"],
+            "artists": sp_track['track']["artists"]
+        })
+
+    print("\n================YT Music Done========================\n")
+
+    data = {
+        "yt_playlist": parsed_yt_playlist,
+        "nulls": nulls,
+        "flagged": [
+            {"title": track["title"], "artists": track["artists"]} for \
+            track in parsed_yt_playlist if track["flag"]
+        ]
+    }
+
+    if data["nulls"]:
+        print(f"\n{len(data['nulls'])} tracks from the playlist were not found on YT Music:\n")
+        for track in data["nulls"]:
+            print(f"Title: {track['title']}\nArtist: {track['artists']}\n")
+        
+        print("============================================")
+    
+    if data["flagged"]:
+        print(f"\nThe accuracy of {len(data['flagged'])} track(s) from the new YT Music playlist are low:\n")
+        for track in data["flagged"]:
+            print(
+                f"Title: {track['title']}\nArtist: {track['artists']}\n"
+            )
+
+        print("============================================")
+
+    return data["yt_playlist"]
+
+
+def search_for_yt_track(query, title, artists, duration):
+    yt_results = yt.search(query, filter="songs", limit=5)
+    correct_track = None
+
+    for yt_track in yt_results:
+        yt_track_duration = yt_track["duration_seconds"]
+        yt_track_title = yt_track["title"]
+        yt_track_artists = [artist["name"].lower() for artist in yt_track["artists"]]
+        yt_track_id = yt_track["videoId"]
+
+        correct_artist = bool(
+        string_similarity(yt_track_artists[0], artists[0]) >= 0.4 or \
+        list_similarity(yt_track_artists, artists) >= (1 / max(len(yt_track_artists), len(artists))) or \
+        string_similarity(str(yt_track_artists), str(artists)) >= 0.4
+        )
+
+        if (correct_artist and abs(yt_track_duration - duration) <= 5):
+            flag = False
+
+            # If string_similarity between song title from YT and Spotify is less than 0.5 OR
+            # (string similarity between sole artists from YT and Spotify is less than 0.4 and
+            # no similar artist in the list of artists from YT and Spotify)
+            if string_similarity(yt_track_title, title) < 0.2 or \
+            (string_similarity(yt_track_artists[0], artists[0]) <= 0.5 and
+            list_similarity(yt_track_artists, artists) < (1 / max(len(yt_track_artists), len(artists)))):
+                flag = True
+            
+            correct_track = {
+                "title": yt_track_title,
+                "artists": [artist["name"] for artist in yt_track["artists"]],
+                "duration_seconds": yt_track_duration,
+                "yt_id": yt_track_id,
+                "yt_url": f"https://music.youtube.com/watch?v={yt_track_id}",
+                "flag": flag
+            }
+            break
+
+    print(f"Found {correct_track['title']} on YT Music...") if correct_track else \
+    print(f"Didn't find {query} on YT Music...")
+    return correct_track
+
 
 # jamming of genitals
 id1 = "5KegusCFrx118JomSBcjvD"
@@ -63,18 +202,21 @@ id2 = "3AyRHA5JC0QtHWHhdph1fb"
 id3 = "0Mpj7oqduJ24uMGy5tC8ff"
 # url3 = "https://open.spotify.com/playlist/0Mpj7oqduJ24uMGy5tC8ff?si=505779dcd2ca4e6e"
 
+
 spotify_playlist = get_spotify_playlist(id3)
 
-with open("spotify_to_yt_jsons/result.json", "w") as file:
+# write parsed Spotify playlist to file
+with open("spotify_to_yt_jsons/spotify_playlist.json", "w") as file:
     json.dump(spotify_playlist, file,indent=4)
+
+# convert parsed Spotify playlist to YT playlist and write to a file
+with open("spotify_to_yt_jsons/yt_playlist.json", "w") as file:
+    yt_playlist = convert_spotify_to_yt(spotify_playlist)
+    json.dump(yt_playlist, file, indent=4)
 
 print('Done.')
 
 
-
-# result = sp.search(q=f"track:All I Need (feat. Wale) artist:Chris Brown", type="track")
-# result = sp.search(q=f"Non Living Things Sarkodie Ft.Oxlade", type="track")
-# print(result)
 
 # TODO
 # Clean up code
