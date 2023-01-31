@@ -169,8 +169,8 @@ def convert_yt_to_spotify(yt_playlist, name):
 
     data = {
         "link": spotify_playlist["external_urls"]["spotify"],
+        "spotify_playlist": parsed_spotify_playlist,
         "nulls": nulls,
-        "parsed_spotify_playlist": parsed_spotify_playlist,
         "flagged": [
             {"title": track["title"], "artists": track["artists"]} for \
             track in parsed_spotify_playlist if track["flag"]
@@ -195,7 +195,7 @@ def convert_yt_to_spotify(yt_playlist, name):
         
         print("============================================")
 
-    return data
+    return data["spotify_playlist"]
 
 
 def search_for_spotify_track(query, title, artists, duration, video):
@@ -239,7 +239,6 @@ def search_for_spotify_track(query, title, artists, duration, video):
 
         if (correct_artist and abs(track_duration_seconds - duration) <= 5) or \
         (video and correct_artist and abs(track_duration_seconds - duration) <= 90):
-
             flag = False
 
             # If string_similarity between song title from YT and Spotify is less than 0.5 OR
@@ -284,7 +283,7 @@ with open("yt_playlist4.json", "w") as file:
 # convert parsed YT playlist to Spotify playlist and write to a file
 with open("spotify_playlist5.json", "w") as file:
     spotify_playlist = convert_yt_to_spotify(yt_playlist["tracks"], yt_playlist["title"])
-    json.dump(spotify_playlist["parsed_spotify_playlist"], file, indent=4)
+    json.dump(spotify_playlist, file, indent=4)
 
 
 print("Done.")
