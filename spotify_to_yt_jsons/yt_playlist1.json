@@ -1,0 +1,52 @@
+[
+    {
+        "title": "The Horse and the Infant",
+        "artists": [
+            "Luke Holt, EPIC Ensemble & Jorge Rivera-Herrans"
+        ],
+        "duration_seconds": 233,
+        "yt_id": "o_3joQiQGmw",
+        "yt_url": "https://music.youtube.com/watch?v=o_3joQiQGmw",
+        "flag": false
+    },
+    {
+        "title": "Just a Man",
+        "artists": [
+            "EPIC Ensemble & Jorge Rivera-Herrans"
+        ],
+        "duration_seconds": 150,
+        "yt_id": "Pi-dmufCcng",
+        "yt_url": "https://music.youtube.com/watch?v=Pi-dmufCcng",
+        "flag": false
+    },
+    {
+        "title": "Full Speed Ahead",
+        "artists": [
+            "Armando Juli\u00e1n, Steven Dookie, EPIC Ensemble & Jorge Rivera-Herrans"
+        ],
+        "duration_seconds": 181,
+        "yt_id": "9kAppcCqkwk",
+        "yt_url": "https://music.youtube.com/watch?v=9kAppcCqkwk",
+        "flag": true
+    },
+    {
+        "title": "Open Arms",
+        "artists": [
+            "Steven Dookie, EPIC Ensemble & Jorge Rivera-Herrans"
+        ],
+        "duration_seconds": 200,
+        "yt_id": "DqTgpeXXu9M",
+        "yt_url": "https://music.youtube.com/watch?v=DqTgpeXXu9M",
+        "flag": false
+    },
+    {
+        "title": "Warrior of the Mind",
+        "artists": [
+            "Teagan Earley & Jorge Rivera-Herrans"
+        ],
+        "duration_seconds": 208,
+        "yt_id": "cP2HxNQTIQU",
+        "yt_url": "https://music.youtube.com/watch?v=cP2HxNQTIQU",
+        "flag": false
+    }
+]
