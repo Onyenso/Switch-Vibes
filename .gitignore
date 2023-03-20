@@ -3,3 +3,4 @@ venv
 .DS_Store
 __pycache__/
 switch_vibes/headers_auth.json
+switch_vibes/test.py
