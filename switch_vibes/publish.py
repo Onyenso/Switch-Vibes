@@ -139,24 +139,22 @@ def respond_to_mentions():
                     nulls = bool(no_of_nulls > 0)
                     flagged = bool(no_of_flagged > 0)
 
-                    match nulls:
-                        case True:
-                            text += f"\n\nFor some reason, {no_of_nulls} track(s) from the Spotify " \
-                            "playlist were not found on YT Music by our own search algorithm:\n\n"
-                            for index in range(no_of_nulls):
-                                text += f"{index + 1}) Title: {new_yt_playlist['nulls'][index]['title']}\nArtist: " \
-                                f"{new_yt_playlist['nulls'][index]['artists']}\n"
-                        case default:
-                            pass
+                    if nulls:
+                        text += f"\n\nFor some reason, {no_of_nulls} track(s) from the Spotify " \
+                        "playlist were not found on YT Music by our own search algorithm:\n\n"
+                        for index in range(no_of_nulls):
+                            text += f"{index + 1}) Title: {new_yt_playlist['nulls'][index]['title']}\nArtist: " \
+                            f"{new_yt_playlist['nulls'][index]['artists']}\n"
+                    else:
+                        pass
                     
-                    match flagged:
-                        case True:
-                            text += f"\n\nThe accuracy of {no_of_flagged} track(s) in the new YT Music playlist are low:\n\n"
-                            for index in range(no_of_flagged):
-                                text += f"{index + 1}) Title: {new_yt_playlist['flagged'][index]['title']}\nArtist: " \
-                                f"{new_yt_playlist['flagged'][index]['artists']}\n"
-                        case default:
-                            pass
+                    if flagged:
+                        text += f"\n\nThe accuracy of {no_of_flagged} track(s) in the new YT Music playlist are low:\n\n"
+                        for index in range(no_of_flagged):
+                            text += f"{index + 1}) Title: {new_yt_playlist['flagged'][index]['title']}\nArtist: " \
+                            f"{new_yt_playlist['flagged'][index]['artists']}\n"
+                    else:
+                        pass
                     text += "\nYou can now add the playlist to your library or add to a new playlist in your account."
 
         elif mention_text == "to spotify":
@@ -182,24 +180,22 @@ def respond_to_mentions():
                     nulls = bool(no_of_nulls > 0)
                     flagged = bool(no_of_flagged > 0)
 
-                    match nulls:
-                        case True:
-                            text += f"\n\nFor some reason, {no_of_nulls} track(s) from the " \
-                            "YT Music playlist were not found on Spotify by our own search algorithm:\n\n"
-                            for index in range(no_of_nulls):
-                                text += f"{index + 1}) Title: {new_spotify_playlist['nulls'][index]['title']}\nArtist: " \
-                                f"{new_spotify_playlist['nulls'][index]['artists']}\n"
-                        case default:
-                            pass
+                    if nulls:
+                        text += f"\n\nFor some reason, {no_of_nulls} track(s) from the " \
+                        "YT Music playlist were not found on Spotify by our own search algorithm:\n\n"
+                        for index in range(no_of_nulls):
+                            text += f"{index + 1}) Title: {new_spotify_playlist['nulls'][index]['title']}\nArtist: " \
+                            f"{new_spotify_playlist['nulls'][index]['artists']}\n"
+                    else:
+                        pass
                     
-                    match flagged:
-                        case True:
-                            text += f"\n\nThe accuracy of {no_of_flagged} track(s) in the new Spotify playlist are low:\n\n"
-                            for index in range(no_of_flagged):
-                                text += f"{index + 1}) Title: {new_spotify_playlist['flagged'][index]['title']}\nArtist: " \
-                                f"{new_spotify_playlist['flagged'][index]['artists']}\n"
-                        case default:
-                            pass
+                    if flagged:
+                        text += f"\n\nThe accuracy of {no_of_flagged} track(s) in the new Spotify playlist are low:\n\n"
+                        for index in range(no_of_flagged):
+                            text += f"{index + 1}) Title: {new_spotify_playlist['flagged'][index]['title']}\nArtist: " \
+                            f"{new_spotify_playlist['flagged'][index]['artists']}\n"
+                    else:
+                        pass
                     
                     text += "\nYou can now add the playlist to your library or add to a new playlist in your account."
 
