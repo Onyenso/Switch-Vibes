@@ -25,4 +25,4 @@ tweepy==4.12.1
 tzdata==2022.7
 tzlocal==4.2
 urllib3==1.26.13
-ytmusicapi==0.25.0
+ytmusicapi==1.1.0

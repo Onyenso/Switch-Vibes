@@ -214,7 +214,3 @@ def search_for_yt_track(query, title, artists, duration):
 
 # AlphaDev's Playlist
 # url3 = "https://open.spotify.com/playlist/0Mpj7oqduJ24uMGy5tC8ff?si=505779dcd2ca4e6e"
-
-
-# spotify_playlist = get_spotify_playlist(sp_playlist_id)
-# new_yt_playlist = convert_spotify_to_yt(spotify_playlist)

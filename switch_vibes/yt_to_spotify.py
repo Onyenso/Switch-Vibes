@@ -292,6 +292,3 @@ def search_for_spotify_track(query, title, artists, duration, video):
 # AlphaDev's playlist
 # url2 = "https://music.youtube.com/playlist?list=PL3Kj3Wrtj3wJLW7tK-kKz-MBz6omQNFeG&feature=share"
 # id2 = "PL3Kj3Wrtj3wJLW7tK-kKz-MBz6omQNFeG"
-
-# yt_music_playlist = get_yt_playlist(id)
-# new_spotify_playlist = convert_yt_to_spotify(yt_music_playlist["tracks"], yt_music_playlist["title"])
