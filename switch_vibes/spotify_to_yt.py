@@ -1,23 +1,18 @@
 """This file converts Spotify to YT."""
 
-import json
-from spotipy import Spotify, SpotifyClientCredentials, SpotifyOAuth
+from spotipy import Spotify, SpotifyOAuth
 from ytmusicapi import YTMusic
-from .utils import string_similarity, list_similarity
+from decouple import config
 
+from switch_vibes.utils import string_similarity, list_similarity
 
-SPOTIFY_REDIRECT_URI = "http://example.com"
-SPOTIFY_BASE_URL = "https://api.spotify.com/v1"
-SPOTIPY_CLIENT_ID = "5d8fbc87cec540c19658832aaed3c9a3"
-SPOTIPY_CLIENT_SECRET = "246ca82970fe482eaa4c6c0a2500aa05"
-SPOTIFY_ID = "31zqj4xzqxbsxjlyggys73k3c4my"
 
 spotify_scope = ["playlist-modify-private", "playlist-modify-public"]
 
 auth_manager = SpotifyOAuth(
-    client_id=SPOTIPY_CLIENT_ID,
-    client_secret=SPOTIPY_CLIENT_SECRET,
-    scope=spotify_scope, redirect_uri=SPOTIFY_REDIRECT_URI,
+    client_id=config("SPOTIPY_CLIENT_ID"),
+    client_secret=config("SPOTIPY_CLIENT_SECRET"),
+    scope=spotify_scope, redirect_uri=config("SPOTIFY_REDIRECT_URI"),
     show_dialog=True,
 )
 
@@ -221,3 +216,5 @@ def search_for_yt_track(query, title, artists, duration):
 # url3 = "https://open.spotify.com/playlist/0Mpj7oqduJ24uMGy5tC8ff?si=505779dcd2ca4e6e"
 
 
+# spotify_playlist = get_spotify_playlist(sp_playlist_id)
+# new_yt_playlist = convert_spotify_to_yt(spotify_playlist)

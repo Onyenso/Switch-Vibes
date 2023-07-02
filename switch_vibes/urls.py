@@ -1,9 +1,9 @@
 from django.urls import path
 
-from . import views
+from switch_vibes.views import index, YtToSpotify
 
 
 urlpatterns = [
-    path("", views.index, name="sw-index"),
-    path("switch_vibes/", views.SwitchVibes.as_view(), name="sw-switch_vibes")
+    path("", index, name="sw-index"),
+    path("yt_to_spotify/", YtToSpotify.as_view(), name="yt-to-spotify"),
 ]

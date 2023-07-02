@@ -36,7 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "switch_vibes"
+    "switch_vibes",
+    "rest_framework"
 ]
 
 MIDDLEWARE = [
