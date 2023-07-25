@@ -1,5 +1,12 @@
 venv
 .env
 .DS_Store
+*/__pycache__
 __pycache__/
 switch_vibes/test.py
+switch_vibes/headers_auth2.json
+switch_vibes/headers_auth3.json
+db.sqlite3
+*/.cache
+.cache
+switch_vibes/__pycache__

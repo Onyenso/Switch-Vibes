@@ -1,10 +1,12 @@
 """This file converts Spotify to YT."""
-
+import re
+import json
 from spotipy import Spotify, SpotifyOAuth
-from ytmusicapi import YTMusic
+from ytmusicapi import YTMusic, setup
 from decouple import config
 
 from switch_vibes.utils import string_similarity, list_similarity
+from switch_vibes import constants
 
 
 spotify_scope = ["playlist-modify-private", "playlist-modify-public"]
@@ -17,7 +19,22 @@ auth_manager = SpotifyOAuth(
 )
 
 sp = Spotify(auth_manager=auth_manager)
-yt = YTMusic(auth="switch_vibes/headers_auth.json")
+yt = YTMusic(auth="switch_vibes/headers_auth3.json")
+
+
+def get_spotify_id_from_url(url):
+    """
+    Gets the id of a Spotify playlist from the playlist's URL.
+
+    :param url: a string representing the URL of the playlist.
+
+    :return id: a string representing the id of the playlist.
+    """
+    sp_link = re.findall(constants.SP_REGEX, url)
+    if not sp_link: return None
+    sp_link = sp_link[0][0]
+    sp_playlist_id = sp_link.split("playlist/")[1].split("?")[0]
+    return sp_playlist_id
 
 
 def get_spotify_playlist(playlist_id):
@@ -137,10 +154,7 @@ def convert_spotify_to_yt(spotify_playlist):
         "link": f"https://music.youtube.com/playlist?list={yt_playlist}",
         "yt_playlist": parsed_yt_playlist,
         "nulls": nulls,
-        "flagged": [
-            {"title": track["title"], "artists": track["artists"]} for \
-            track in parsed_yt_playlist if track["flag"]
-        ]
+        "flagged": [{"title": track["title"], "artists": track["artists"]} for track in parsed_yt_playlist if track["flag"]]
     }
 
     print(f"YT Music Playlist: {data['link']}\n")
@@ -154,10 +168,9 @@ def convert_spotify_to_yt(spotify_playlist):
     
     if data["flagged"]:
         print(f"\nThe accuracy of {len(data['flagged'])} track(s) from the new YT Music playlist are low:\n")
+
         for track in data["flagged"]:
-            print(
-                f"Title: {track['title']}\nArtist: {track['artists']}\n"
-            )
+            print(f"Title: {track['title']}\nArtist: {track['artists']}\n")
 
         print("============================================")
 
@@ -207,10 +220,13 @@ def search_for_yt_track(query, title, artists, duration):
 
 
 # jamming of genitals
-# url1 = "https://open.spotify.com/playlist/5KegusCFrx118JomSBcjvD?si=cf777c0869a24c5"
+# url1 = "https://open.spotify.com/playlist/3U2CYL3s88SGois2GaOaB7?si=9ea0c94c9261499f"
 
 # R & B
 # url2 = https://open.spotify.com/playlist/3AyRHA5JC0QtHWHhdph1fb?si=44cc73ec9e444762
 
 # AlphaDev's Playlist
 # url3 = "https://open.spotify.com/playlist/0Mpj7oqduJ24uMGy5tC8ff?si=505779dcd2ca4e6e"
+
+# spotify_playlist = get_spotify_playlist(get_spotify_id_from_url(url1))
+# convert_spotify_to_yt(spotify_playlist)

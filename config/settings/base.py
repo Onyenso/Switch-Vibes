@@ -29,6 +29,7 @@ ALLOWED_HOSTS = [".localhost", ".127.0.0.1", ".switch-vibes-production.up.railwa
 
 # Application definition
 
+# Django core apps
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -36,18 +37,28 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+]
+
+# Third-party apps
+INSTALLED_APPS += [
+    "rest_framework",
+    "corsheaders",
+]
+
+# Local apps
+INSTALLED_APPS += [
     "switch_vibes",
-    "rest_framework"
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware'
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -128,3 +139,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CSRF_TRUSTED_ORIGINS = [
     'https://switch-vibes-production.up.railway.app/'
 ]
+
+CORS_ORIGIN_ALLOW_ALL = True

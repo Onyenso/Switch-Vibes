@@ -1,3 +1,5 @@
+"""This file has a lot of brute force code. It will be refactored in the future. It is not currently being used."""
+
 import requests
 from . import constants as const
 from requests_oauthlib import OAuth1, OAuth2
