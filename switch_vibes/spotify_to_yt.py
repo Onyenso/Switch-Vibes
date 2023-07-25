@@ -132,7 +132,8 @@ def convert_spotify_to_yt(spotify_playlist):
             query=q,
             title=sp_track["track"]["name"],
             artists=[artist['name'].lower() for artist in sp_track["track"]["artists"]],
-            duration=int(sp_track["track"]["duration_ms"] / 1000)
+            duration=int(sp_track["track"]["duration_ms"] / 1000),
+            index=sp_tracks.index(sp_track)
         )
     
         parsed_yt_playlist.append(yt_track) if yt_track else nulls.append({
@@ -177,7 +178,7 @@ def convert_spotify_to_yt(spotify_playlist):
     return data
 
 
-def search_for_yt_track(query, title, artists, duration):
+def search_for_yt_track(query, title, artists, duration, index):
     yt_results = yt.search(query, filter="songs", limit=5)
     correct_track = None
 
@@ -214,8 +215,8 @@ def search_for_yt_track(query, title, artists, duration):
             }
             break
 
-    print(f"Found {correct_track['title']} on YT Music...") if correct_track else \
-    print(f"Didn't find {query} on YT Music...")
+    print(f"{index + 1}) Found {correct_track['title']} on YT Music...") if correct_track else \
+    print(f"{index + 1}) Didn't find {query} on YT Music...")
     return correct_track
 
 
