@@ -1,6 +1,7 @@
 # SwitchVibes
-This is the back-end API service for SwitchVibes, a platform for seamless music playlist migration between different music streaming services.
-Do away with manual playlist recreation and let SwitchVibes do the heavy lifting for you.
+This is the back-end API service for SwitchVibes, a platform that enables smooth music playlist migration between different music streaming services.
+Simply provide the link of a playlist from your favorite source platform (e.g., Spotify), and SwitchVibes will automatically transfer all the songs to
+a new playlist in your specified destination platform. Eliminate manual playlist recreation and let SwitchVibes do the heavy lifting for you.
 
 ## Front-end
 The front-end application provides a simple user interface for interacting with SwitchVibes APIs. You can access it [here](https://your-frontend-url).
