@@ -15,8 +15,29 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from drf_yasg import openapi
+from drf_yasg.views import get_schema_view
+from rest_framework import permissions
+
+
+# This is used in settings.py
+api_info = openapi.Info(
+    title="Switch Vibes API",
+    default_version="v1",
+    description="API for Switch Vibes",
+    contact=openapi.Contact(name="Uchenna Onyenso", email="alphadev.onyenso@gmail.com", url="https://onyenso.github.io/alphadev/")
+)
+
+
+schema_view = get_schema_view(
+    public=True,
+    permission_classes=[permissions.AllowAny]
+)
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", include("switch_vibes.urls"))
+    path("", include("switch_vibes.urls")),
+    path("docs/", schema_view.with_ui("redoc", cache_timeout=0), name="schema-redoc"),
+    path("swagger/", schema_view.with_ui("swagger", cache_timeout=0), name="schema-swagger-ui"),
 ]

@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 INSTALLED_APPS += [
     "rest_framework",
     "corsheaders",
+    "drf_yasg",
 ]
 
 # Local apps
@@ -141,3 +142,9 @@ CSRF_TRUSTED_ORIGINS = [
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
+
+
+SWAGGER_SETTINGS = {
+    "DEFAULT_INFO": "config.urls.api_info",
+    "SECURITY_DEFINITIONS": None
+}
