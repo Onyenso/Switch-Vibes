@@ -1,19 +1,19 @@
 {
     "accept": "*/*",
     "accept-encoding": "gzip, deflate",
-    "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
-    "authorization": "SAPISIDHASH 1690256183_97ef247ee5fe30885753f58336b55ae7b352a2db",
+    "accept-language": "en-GB,en;q=0.9",
+    "authorization": "SAPISIDHASH 1693252203_93d68726ace0ef89983608c294e54f065faba7d2",
     "content-encoding": "gzip",
     "content-type": "application/json",
-    "cookie": "VISITOR_INFO1_LIVE=4XhFBm51tzc; _ga=GA1.1.355363379.1661677426; _ga_VCGEPY40VB=GS1.1.1664426058.13.0.1664426058.0.0.0; _gcl_au=1.1.1640051697.1684003034; YSC=JP9Qnx2DuYg; PREF=library_tab_browse_id=FEmusic_library_landing&repeat=ALL&autoplay=true&volume=100&f4=4000000&tz=Africa.Lagos&f6=40000000&f5=20000&f7=100&has_user_changed_default_autoplay_mode=true&guide_collapsed=true; SID=ZAjyuqyH9LdowICs4L-xfiZwd8BGfal4O4bl_MSzhgIC7H9C3YsPfzOlxKwdq9bm-jt8Rg.; __Secure-1PSIDTS=sidts-CjEBPu3jIfDaM3Xz_ZNe4Cd1l6dd8vQOyJ4qXg25pnZFWR44G1T0LJhz9d_2zNKUT8XfEAA; __Secure-3PSIDTS=sidts-CjEBPu3jIfDaM3Xz_ZNe4Cd1l6dd8vQOyJ4qXg25pnZFWR44G1T0LJhz9d_2zNKUT8XfEAA; __Secure-1PSID=ZAjyuqyH9LdowICs4L-xfiZwd8BGfal4O4bl_MSzhgIC7H9CPUf9eiqQUrmwaIv9odZa4w.; __Secure-3PSID=ZAjyuqyH9LdowICs4L-xfiZwd8BGfal4O4bl_MSzhgIC7H9C9oL-Ic6g-37inPgVV_n3DA.; HSID=An8AGGEn1uEyddjhU; SSID=AxoPq1uTJ0OSWsKOz; APISID=bQPQpa3Oeba4Awjp/AcoPCs9NppXNECfgz; SAPISID=haNNl4LRDiVxLz-H/AoGhazUd-csVX_DiJ; __Secure-1PAPISID=haNNl4LRDiVxLz-H/AoGhazUd-csVX_DiJ; __Secure-3PAPISID=haNNl4LRDiVxLz-H/AoGhazUd-csVX_DiJ; LOGIN_INFO=AFmmF2swRAIgFA2oPHB6I0zpBAUJ4CAjJqV2Hz6jrq44aI7vSeRViRgCIGW6ICGv5D5ncW0ApaqhMZprGUs2i7pafr66USzUdGY6:QUQ3MjNmeC16UU5taFY1cm1XdE80dDVxNmhTZmNpTDJVcDl2MU91clhiLWZ6V1Bfa3FhczNpRno1S0laWTFoUm1IN19Udi1hRDVKa3gtYmR2QnVMR0RWUVFmRVJzSUpIcjZhc2tWUkFMZ1MtX0dmYVpoMVVsYUxWUmN0X3FfUUlGYnhSWUtKaVJwRVNMeE9JS05CeWgyc3l5OUtMSHhFLUpB; SIDCC=APoG2W97uWAjBw9Qq2R0LWDR73thfalGLvnAXAIeNbrLTTRWfyowoMztpHVBGPOe0ikzkalTCuQ; __Secure-1PSIDCC=APoG2W9e_uLjVbFkJ5z6j1HjArb_E4k5faCDcfvnzpCguMV-lAmMsCohoMqtjlXO6XC-To5zJg5k; __Secure-3PSIDCC=APoG2W9XT04KOaLkk23ePoLW_Mpsn6cmdaqXB_R6YtWiWoi4SMLOOXc_huC72ZbzY3ophifasj_W",
+    "cookie": "YSC=3Ky67y6yA9Y; VISITOR_INFO1_LIVE=aTCZeynba3s; VISITOR_PRIVACY_METADATA=CgJORxICGgA%3D; _gcl_au=1.1.885356210.1693251424; __Secure-1PSIDTS=sidts-CjEBSAxbGdG2CZpfzpssyJy7dG0l92VbQTSs7uboo57dXlbragP1BnujxBEUI-M_HU3SEAA; __Secure-3PSIDTS=sidts-CjEBSAxbGdG2CZpfzpssyJy7dG0l92VbQTSs7uboo57dXlbragP1BnujxBEUI-M_HU3SEAA; HSID=AXg2TdSodD9L0p3JL; SSID=A9teYa1AdWAODW2ui; APISID=DhYx9O5UIkMJfdfA/AAr-2CWaDtz_mZT3r; SAPISID=uZa-JX8x33bPaLRe/A8OHZR4jzMPtpkWaD; __Secure-1PAPISID=uZa-JX8x33bPaLRe/A8OHZR4jzMPtpkWaD; __Secure-3PAPISID=uZa-JX8x33bPaLRe/A8OHZR4jzMPtpkWaD; SID=aQjhHYM-_-MjbxG7tOUk9lG9dNN57UkY5ZuzT2_gw91NiRvmGR8pJUYMUH5Kls7qo-1tVQ.; __Secure-1PSID=aQjhHYM-_-MjbxG7tOUk9lG9dNN57UkY5ZuzT2_gw91NiRvmlTBwv1jfqWhqjJbvNJc1lg.; __Secure-3PSID=aQjhHYM-_-MjbxG7tOUk9lG9dNN57UkY5ZuzT2_gw91NiRvmJXh0mgpO9aeBLS-V4d-Ydw.; LOGIN_INFO=AFmmF2swRQIhAPM3LMxzLIyAa50_4BhlSw9wQz0jgk7RDLH-Pq0InbeRAiBuaGR5dZ9V8-icXQCRX-DlGC9HjTsZmEqqWrk7IJQMJw:QUQ3MjNmenE0aHBqOFdlbEl0bVQyVC05OEpDbmZoZHBhX2licUl0dG1GeWFFbkdaSWVtNWZzRV9XUElWRTBCem9yQmxESDUybjZCZmxMblB1elNzSU1fVVJIVkRYc0F4V01oLVFQM2pZT1dGRjVVMWxwdXp4UFNJTW9mVFQwR01TUEVPREw1Wjc4alFmeGFZa1o1bXYtM213U05IcG4xUm5n; SIDCC=APoG2W8f6qkowXCyLrJTkrRG8a_lVYJYFjpz7KmZgWzDRZhdshHi-_X_cTc0jYDOwqTvqXSW; __Secure-1PSIDCC=APoG2W-JUBwJ0P_87tqvHEfvmB-73-MPZhCmMSL2odyN39NHUFlvs2S0SXZY4TZLjsOdRmXh; __Secure-3PSIDCC=APoG2W9pSEWujwn39wXB-EkJ2XUpmrilnoJv4cZuuVAPeymfj7V70hg7-4QUnopxk-drcF13",
     "https": "Referer:",
     "origin": "https://music.youtube.com",
     "referer": "https://music.youtube.com/",
     "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0",
-    "x-goog-authuser": "7",
-    "x-goog-visitor-id": "Cgs0WGhGQm01MXR6Yyighv2lBg%3D%3D",
+    "x-goog-authuser": "0",
+    "x-goog-visitor-id": "CgthVENaZXluYmEzcyjN77OnBjIICgJORxICGgA%3D",
     "x-origin": "https://music.youtube.com",
     "x-youtube-bootstrap-logged-in": "true",
     "x-youtube-client-name": "67",
-    "x-youtube-client-version": "1.20230719.01.00"
+    "x-youtube-client-version": "1.20230821.01.01"
 }
