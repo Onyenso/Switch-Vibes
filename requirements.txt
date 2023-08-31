@@ -31,4 +31,5 @@ tzdata==2022.7
 tzlocal==4.2
 uritemplate==4.1.1
 urllib3==1.26.13
+whitenoise==6.5.0
 ytmusicapi==1.1.1
