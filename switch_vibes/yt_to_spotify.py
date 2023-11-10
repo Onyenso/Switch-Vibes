@@ -84,7 +84,8 @@ def get_yt_playlist(playlist_id):
 
             # Get release date of track from track data
             published_date = music_data["microformat"]["microformatDataRenderer"]["publishDate"]
-            published_date = datetime.strptime(published_date, '%Y-%m-%d').date()
+            # published_date = datetime.strptime(published_date, '%Y-%m-%d').date()
+            published_date = datetime.strptime(published_date, '%Y-%m-%dT%H:%M:%S%z').date()
             year = published_date.year
 
             # duration gotten from playlist does not match sometimes
