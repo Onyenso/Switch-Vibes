@@ -179,6 +179,9 @@ def convert_yt_to_spotify(yt_playlist, name=None):
     uris =[track["uri"] for track in parsed_spotify_playlist]
     start = 0
     stop = 100
+
+    # print("========SPOTIFY PARSED TRACKS========", parsed_spotify_playlist)
+    # print("========SPOTIFY PARSED URIS========", uris)
     
     # Add tracks to the created Spotify playlist
     while True:
