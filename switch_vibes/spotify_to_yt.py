@@ -79,7 +79,7 @@ def get_spotify_playlist(playlist_id):
     try:
         parsed_playlist_tracks = sp.playlist(
             playlist_id=playlist_id,
-            fields="id,name,tracks.items(track(name,artists(name),duration_ms)),tracks.next",
+            fields="id,name,tracks.items(track(name,duration_ms,artists(name))),tracks.next",
         )
     except Exception as e:
         if "404" in str(e):
