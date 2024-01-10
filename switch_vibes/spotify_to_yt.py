@@ -1,6 +1,5 @@
 """This file converts Spotify to YT."""
 import re
-import json
 from spotipy import Spotify, SpotifyOAuth
 from ytmusicapi import YTMusic, setup
 from decouple import config
@@ -153,7 +152,7 @@ def convert_spotify_to_yt(spotify_playlist):
 
     data = {
         "link": f"https://music.youtube.com/playlist?list={yt_playlist}",
-        "yt_playlist": parsed_yt_playlist,
+        "playlist": parsed_yt_playlist,
         "nulls": nulls,
         "flagged": [{"title": track["title"], "artists": track["artists"]} for track in parsed_yt_playlist if track["flag"]]
     }

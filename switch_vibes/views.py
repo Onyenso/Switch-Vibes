@@ -4,7 +4,12 @@ from rest_framework.decorators import APIView
 from django.utils.decorators import method_decorator
 from drf_yasg.utils import swagger_auto_schema
 
-from switch_vibes.serializers import YtToSpotifySerializer, YtToSpotifyResponseSerializer, SpotifyToYtSerializer, SpotifyToYtResponseSerializer
+from switch_vibes.serializers import (
+    YtToSpotifySerializer,
+    YtToSpotifyResponseSerializer,
+    SpotifyToYtSerializer,
+    SpotifyToYtResponseSerializer
+)
 
 
 def index(request):

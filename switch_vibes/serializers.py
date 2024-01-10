@@ -14,7 +14,11 @@ class YtToSpotifyTrackSerializer(serializers.Serializer):
 
 
 class YtToSpotifySerializer(serializers.Serializer):
-    yt_playlist_url = serializers.URLField(required=True, write_only=True, help_text="The URL of the YouTube playlist to be converted to Spotify.")
+    yt_playlist_url = serializers.URLField(
+        required=True,
+        write_only=True,
+        help_text="The URL of the YouTube playlist to be converted to Spotify."
+    )
 
     def validate(self, data):
         yt_playlist_url = data.get("yt_playlist_url")
@@ -47,7 +51,7 @@ class YtToSpotifySerializer(serializers.Serializer):
 class YtToSpotifyResponseSerializer(serializers.Serializer):
     """This serializer is just used for Swagger documentation."""
     link = serializers.URLField(read_only=True, help_text="The URL of the new Spotify playlist that was created.")
-    spotify_playlist = YtToSpotifyTrackSerializer(many=True, read_only=True)
+    playlist = YtToSpotifyTrackSerializer(many=True, read_only=True)
     nulls = serializers.ListField(read_only=True)
     flagged = serializers.ListField(read_only=True)
 
@@ -62,7 +66,11 @@ class SpotifyToYtTrackSerializer(serializers.Serializer):
 
 
 class  SpotifyToYtSerializer(serializers.Serializer):
-    spotify_playlist_url = serializers.URLField(required=True, write_only=True, help_text="The URL of the Spotify playlist to be converted to YouTube.")
+    spotify_playlist_url = serializers.URLField(
+        required=True,
+        write_only=True,
+        help_text="The URL of the Spotify playlist to be converted to YouTube."
+    )
 
     def validate(self, data):
         spotify_playlist_url = data.get("spotify_playlist_url")
@@ -95,6 +103,6 @@ class  SpotifyToYtSerializer(serializers.Serializer):
 class SpotifyToYtResponseSerializer(serializers.Serializer):
     """This serializer is just used for Swagger documentation."""
     link = serializers.URLField(read_only=True, help_text="The URL of the new YouTube playlist that was created.")
-    yt_playlist = SpotifyToYtTrackSerializer(many=True, read_only=True)
+    playlist = SpotifyToYtTrackSerializer(many=True, read_only=True)
     nulls = serializers.ListField(read_only=True)
     flagged = serializers.ListField(read_only=True)

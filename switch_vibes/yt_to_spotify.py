@@ -192,7 +192,7 @@ def convert_yt_to_spotify(yt_playlist, name=None):
 
     data = {
         "link": spotify_playlist["external_urls"]["spotify"],
-        "spotify_playlist": parsed_spotify_playlist,
+        "playlist": parsed_spotify_playlist,
         "nulls": nulls,
         "flagged": [
             {"title": track["title"], "artists": track["artists"]} for \
