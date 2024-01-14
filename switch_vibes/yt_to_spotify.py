@@ -1,5 +1,6 @@
 """This file converts YT to Spotify."""
 import re
+import time
 from datetime import datetime
 from ytmusicapi import YTMusic
 from spotipy import Spotify, SpotifyOAuth
@@ -243,6 +244,7 @@ def search_for_spotify_track(query, title, artists, duration, video):
     correct_track = None
 
     # Search for track on Spotify
+    time.sleep(0.01)
     response = sp.search(query, type="track", limit=5)
 
     # Parse results to get the right track details
