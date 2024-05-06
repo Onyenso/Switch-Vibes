@@ -9,7 +9,9 @@ You can explore the endpoints and their functionalities using ReDoc and Swagger 
 - [Swagger Documentation](https://switch-vibes-production.up.railway.app/swagger/)
 
 ## Front-end
-The front-end application is still being currently implemented.
+You can iteract with the API through the frontend [here](https://switch-vibes.vercel.app/). View source code [here](https://github.com/Sucodes/switch-vibes).
+
+Credit: [Suvwe](https://github.com/Sucodes).
 
 ## How to Use
 To use SwitchVibes, you can make HTTP requests directly to our API or you can use the front-end instead.
