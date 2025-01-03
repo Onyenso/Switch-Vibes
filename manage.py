@@ -3,9 +3,17 @@
 import os
 import sys
 from dotenv import load_dotenv
+import warnings
 
 
 load_dotenv()
+
+# Suppress UserWarning from the cryptography package
+warnings.filterwarnings(
+    "ignore",
+    category=UserWarning,
+    module="OpenSSL",
+)
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', os.environ.get("DJANGO_SETTINGS_MODULE"))

@@ -286,12 +286,3 @@ def search_for_spotify_track(query, title, artists, duration, video):
     print(f"Found {correct_track['title']} on Spotify...") if correct_track else \
     print(f"Didn't find {query} on Spotify...")
     return correct_track
-
-
-# jamming of genitals
-# url = "https://music.youtube.com/playlist?list=PL3Kj3Wrtj3wJl4qe3qJux6bZfnKqdmugg&feature=share"
-# id = "PL3Kj3Wrtj3wJl4qe3qJux6bZfnKqdmugg"
-
-# AlphaDev's playlist
-# url2 = "https://music.youtube.com/playlist?list=PL3Kj3Wrtj3wJLW7tK-kKz-MBz6omQNFeG&feature=share"
-# id2 = "PL3Kj3Wrtj3wJLW7tK-kKz-MBz6omQNFeG"

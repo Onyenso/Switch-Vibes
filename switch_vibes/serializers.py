@@ -31,20 +31,20 @@ class YtToSpotifySerializer(serializers.Serializer):
         if not yt_id:
             raise serializers.ValidationError({"error": "Invalid YouTube playlist URL."})
         
-        yt_playist = get_yt_playlist(yt_id)
+        yt_playlist = get_yt_playlist(yt_id)
 
-        if not yt_playist:
-            raise serializers.ValidationError({"error": "Sorry an error occured. Please try again soon."})
+        if not yt_playlist:
+            raise serializers.ValidationError({"error": "Sorry an error occurred. Please try again soon."})
 
-        if "404" in yt_playist:
+        if "404" in yt_playlist:
             raise serializers.ValidationError({"error": "The requested playlist could not be found on YT Music."})
         
-        data["yt_playist"] = yt_playist
+        data["yt_playlist"] = yt_playlist
         return data
     
     def create(self, validated_data):
-        yt_playist = validated_data.get("yt_playist")
-        new_spotify_playlist = convert_yt_to_spotify(yt_playist["tracks"], yt_playist["title"])
+        yt_playlist = validated_data.get("yt_playlist")
+        new_spotify_playlist = convert_yt_to_spotify(yt_playlist["tracks"], yt_playlist["title"])
         return new_spotify_playlist
 
 
@@ -83,20 +83,20 @@ class  SpotifyToYtSerializer(serializers.Serializer):
         if not spotify_id:
             raise serializers.ValidationError({"error": "Invalid Spotify playlist URL."})
         
-        spotify_playist = get_spotify_playlist(spotify_id)
+        spotify_playlist = get_spotify_playlist(spotify_id)
 
-        if not spotify_playist:
-            raise serializers.ValidationError({"error": "Sorry an error occured. Please try again soon."})
+        if not spotify_playlist:
+            raise serializers.ValidationError({"error": "Sorry an error occurred. Please try again soon."})
 
-        if "404" in spotify_playist:
+        if "404" in spotify_playlist:
             raise serializers.ValidationError({"error": "The requested playlist could not be found on Spotify."})
         
-        data["spotify_playist"] = spotify_playist
+        data["spotify_playlist"] = spotify_playlist
         return data
     
     def create(self, validated_data):
-        spotify_playist = validated_data.get("spotify_playist")
-        new_yt_playlist = convert_spotify_to_yt(spotify_playist)
+        spotify_playlist = validated_data.get("spotify_playlist")
+        new_yt_playlist = convert_spotify_to_yt(spotify_playlist)
         return new_yt_playlist
     
 

@@ -188,20 +188,27 @@ def search_for_yt_track(query, title, artists, duration, index):
         yt_track_id = yt_track["videoId"]
 
         correct_artist = bool(
-        string_similarity(yt_track_artists[0], artists[0]) >= 0.4 or \
-        list_similarity(yt_track_artists, artists) >= (1 / max(len(yt_track_artists), len(artists))) or \
-        string_similarity(str(yt_track_artists), str(artists)) >= 0.4
+            (
+                yt_track_artists and artists and string_similarity(yt_track_artists[0], artists[0]) >= 0.4
+            ) or
+            (
+                yt_track_artists and list_similarity(yt_track_artists, artists) >= \
+                (1 / max(len(yt_track_artists), len(artists)))
+            ) or
+            string_similarity(str(yt_track_artists), str(artists)) >= 0.4
         )
 
         if (correct_artist and abs(yt_track_duration - duration) <= 5):
             flag = False
 
-            # If string_similarity between song title from YT and Spotify is less than 0.5 OR
-            # (string similarity between sole artists from YT and Spotify is less than 0.4 and
+            # If string_similarity between song title from YT and Spotify is less than 0.2 OR
+            # (string similarity between sole artists from YT and Spotify is less than 0.5 and
             # no similar artist in the list of artists from YT and Spotify)
             if string_similarity(yt_track_title, title) < 0.2 or \
-            (string_similarity(yt_track_artists[0], artists[0]) <= 0.5 and
-            list_similarity(yt_track_artists, artists) < (1 / max(len(yt_track_artists), len(artists)))):
+            (
+                string_similarity(yt_track_artists[0], artists[0]) <= 0.5 and
+                list_similarity(yt_track_artists, artists) < (1 / max(len(yt_track_artists), len(artists)))
+            ):
                 flag = True
             
             correct_track = {
@@ -217,16 +224,3 @@ def search_for_yt_track(query, title, artists, duration, index):
     print(f"{index + 1}) Found {correct_track['title']} on YT Music...") if correct_track else \
     print(f"{index + 1}) Didn't find {query} on YT Music...")
     return correct_track
-
-
-# jamming of genitals
-# url1 = "https://open.spotify.com/playlist/3U2CYL3s88SGois2GaOaB7?si=9ea0c94c9261499f"
-
-# R & B
-# url2 = https://open.spotify.com/playlist/3AyRHA5JC0QtHWHhdph1fb?si=44cc73ec9e444762
-
-# AlphaDev's Playlist
-# url3 = "https://open.spotify.com/playlist/0Mpj7oqduJ24uMGy5tC8ff?si=505779dcd2ca4e6e"
-
-# spotify_playlist = get_spotify_playlist(get_spotify_id_from_url(url1))
-# convert_spotify_to_yt(spotify_playlist)

@@ -28,22 +28,22 @@ DEBUG = True
 ALLOWED_HOSTS = [".localhost", ".127.0.0.1", ".switch-vibes-production.up.railway.app"]
 
 # Application definition
+# Third-party apps
+INSTALLED_APPS = [
+    "daphne",
+    "rest_framework",
+    "corsheaders",
+    "drf_yasg",
+]
 
 # Django core apps
-INSTALLED_APPS = [
+INSTALLED_APPS += [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-]
-
-# Third-party apps
-INSTALLED_APPS += [
-    "rest_framework",
-    "corsheaders",
-    "drf_yasg",
 ]
 
 # Local apps
@@ -151,3 +151,5 @@ SWAGGER_SETTINGS = {
     "DEFAULT_INFO": "config.urls.api_info",
     "SECURITY_DEFINITIONS": None
 }
+
+ASGI_APPLICATION = "config.asgi.application"
