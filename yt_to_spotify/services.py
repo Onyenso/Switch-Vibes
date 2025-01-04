@@ -8,9 +8,9 @@ from functools import partial
 from decouple import config
 from ytmusicapi import YTMusic
 
-from switch_vibes import constants
-from switch_vibes.yt_to_spotify import sp
-from switch_vibes.utils import string_similarity, list_similarity
+from shared import constants
+from yt_to_spotify.yt_to_spotify import sp
+from shared.utils import string_similarity, list_similarity
 
 
 shared_executor = ThreadPoolExecutor()

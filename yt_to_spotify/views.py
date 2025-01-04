@@ -4,11 +4,9 @@ from rest_framework.decorators import APIView
 from django.utils.decorators import method_decorator
 from drf_yasg.utils import swagger_auto_schema
 
-from switch_vibes.serializers import (
+from yt_to_spotify.serializers import (
     YtToSpotifySerializer,
     YtToSpotifyResponseSerializer,
-    SpotifyToYtSerializer,
-    SpotifyToYtResponseSerializer
 )
 
 
@@ -32,21 +30,3 @@ class YtToSpotify(APIView):
         serializer.is_valid(raise_exception=True)
         new_spotify_playlist = serializer.save()
         return Response(new_spotify_playlist, status=200)
-
-
-@method_decorator(
-    name="post",
-    decorator=swagger_auto_schema(
-        tags=["Spotify to YT"],
-        operation_id="spotify_to_yt",
-        operation_description="Convert a Spotify playlist to a YouTube playlist.",
-        request_body=SpotifyToYtSerializer(),
-        responses={200: SpotifyToYtResponseSerializer}
-    )
-)
-class SpotifyToYt(APIView):
-    def post(self, request, format=None):
-        serializer = SpotifyToYtSerializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        new_yt_playlist = serializer.save()
-        return Response(new_yt_playlist, status=200)

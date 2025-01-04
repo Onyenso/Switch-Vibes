@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-ID_FILE = "switch_vibes/last_mention_id.txt"
+ID_FILE = "shared/last_mention_id.txt"
 
 TWITTER_USERNAME = "switchthevibe"
 POST_TWEET_ENDPOINT = 'https://api.twitter.com/1.1/statuses/update.json'

@@ -3,7 +3,5 @@ venv
 .DS_Store
 */__pycache__
 __pycache__/
-switch_vibes/test.py
-switch_vibes/headers_auth2.json
+yt_to_spotify/headers_auth2.json
 db.sqlite3
-switch_vibes/__pycache__

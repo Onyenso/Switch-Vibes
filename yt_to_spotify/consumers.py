@@ -1,6 +1,6 @@
 from channels.generic.websocket import AsyncWebsocketConsumer
 
-from switch_vibes.services import YtToSpotifyService
+from yt_to_spotify.services import YtToSpotifyService
 
 
 class YtToSpotifyConsumer(AsyncWebsocketConsumer):

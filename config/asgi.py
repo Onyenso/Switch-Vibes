@@ -21,7 +21,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', os.environ.get("DJANGO_SETTINGS_
 
 django_asgi_app = get_asgi_application()
 
-from switch_vibes.routing import websocket_urlpatterns
+from yt_to_spotify.routing import websocket_urlpatterns
 
 application = ProtocolTypeRouter({
     "http": django_asgi_app,

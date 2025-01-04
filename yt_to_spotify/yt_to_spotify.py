@@ -6,8 +6,8 @@ from ytmusicapi import YTMusic
 from spotipy import Spotify, SpotifyOAuth
 from decouple import config
 
-from switch_vibes.utils import string_similarity, list_similarity
-from switch_vibes import constants
+from shared.utils import string_similarity, list_similarity
+from shared import constants
 
 
 spotify_scope = ["playlist-modify-private", "playlist-modify-public"]

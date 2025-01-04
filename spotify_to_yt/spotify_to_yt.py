@@ -4,8 +4,8 @@ from spotipy import Spotify, SpotifyOAuth
 from ytmusicapi import YTMusic, setup
 from decouple import config
 
-from switch_vibes.utils import string_similarity, list_similarity
-from switch_vibes import constants
+from shared.utils import string_similarity, list_similarity
+from shared import constants
 
 
 spotify_scope = ["playlist-modify-private", "playlist-modify-public"]
@@ -18,7 +18,7 @@ auth_manager = SpotifyOAuth(
 )
 
 sp = Spotify(auth_manager=auth_manager)
-yt = YTMusic(auth="switch_vibes/headers_auth3.json")
+yt = YTMusic(auth="yt_to_spotify/headers_auth3.json")
 
 
 def get_spotify_id_from_url(url):

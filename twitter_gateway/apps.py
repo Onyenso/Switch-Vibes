@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class SwitchVibesConfig(AppConfig):
+class TwitterGatewayConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'switch_vibes'
+    name = 'twitter_gateway'

@@ -48,7 +48,8 @@ INSTALLED_APPS += [
 
 # Local apps
 INSTALLED_APPS += [
-    "switch_vibes",
+    "yt_to_spotify",
+    "spotify_to_yt"
 ]
 
 MIDDLEWARE = [

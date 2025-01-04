@@ -25,7 +25,11 @@ api_info = openapi.Info(
     title="Switch Vibes API",
     default_version="v1",
     description="API for Switch Vibes",
-    contact=openapi.Contact(name="Uchenna Onyenso", email="alphadev.onyenso@gmail.com", url="https://onyenso.github.io/alphadev/")
+    contact=openapi.Contact(
+        name="Uchenna Onyenso",
+        email="alphadev.onyenso@gmail.com",
+        url="https://onyenso.github.io/alphadev/"
+    )
 )
 
 
@@ -37,7 +41,8 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", include("switch_vibes.urls")),
+    path("", include("yt_to_spotify.urls")),
+    path("", include("spotify_to_yt.urls")),
     path("docs/", schema_view.with_ui("redoc", cache_timeout=0), name="schema-redoc"),
     path("swagger/", schema_view.with_ui("swagger", cache_timeout=0), name="schema-swagger-ui"),
 ]

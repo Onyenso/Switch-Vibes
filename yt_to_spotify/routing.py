@@ -1,6 +1,6 @@
 from django.urls import re_path
 
-from switch_vibes.consumers import YtToSpotifyConsumer
+from yt_to_spotify.consumers import YtToSpotifyConsumer
 
 
 websocket_urlpatterns = [

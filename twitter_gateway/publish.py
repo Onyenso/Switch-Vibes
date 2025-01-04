@@ -1,11 +1,11 @@
 """This file has a lot of brute force code. It will be refactored in the future. It is not currently being used."""
 
 import requests
-from . import constants as const
+from ..shared import constants as const
 from requests_oauthlib import OAuth1, OAuth2
 import re
-from .spotify_to_yt import get_spotify_playlist, convert_spotify_to_yt
-from .yt_to_spotify import get_yt_playlist, convert_yt_to_spotify
+from ..spotify_to_yt.spotify_to_yt import get_spotify_playlist, convert_spotify_to_yt
+from ..yt_to_spotify.yt_to_spotify import get_yt_playlist, convert_yt_to_spotify
 import tweepy
 
 
@@ -67,7 +67,7 @@ def save_mention_id(id):
 
 # Retrieves the id from the last time the script ran
 def get_mention_id():
-    with open("switch_vibes/last_mention_id.txt", "r") as f:
+    with open("shared/last_mention_id.txt", "r") as f:
         last_id = f.readlines()
         if not last_id:
             print("No mentions.")
