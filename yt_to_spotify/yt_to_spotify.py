@@ -264,8 +264,8 @@ def search_for_spotify_track(query, title, artists, duration, video):
         (video and correct_artist and abs(track_duration_seconds - duration) <= 90):
             flag = False
 
-            # If string_similarity between song title from YT and Spotify is less than 0.5 OR
-            # (string similarity between sole artists from YT and Spotify is less than 0.4 and
+            # If string_similarity between song title from YT and Spotify is less than 0.2 OR
+            # (string similarity between sole artists from YT and Spotify is less than 0.5 and
             # no similar artist in the list of artists from YT and Spotify)
             if string_similarity(title, sp_title) < 0.2 or \
             (string_similarity(artists[0], sp_artists[0]) <= 0.5 and
@@ -280,7 +280,7 @@ def search_for_spotify_track(query, title, artists, duration, video):
                 "uri": track["uri"],
                 "flag": flag
             }
-            # To prevent futher iteration after track has been found
+            # To prevent further iteration after track has been found
             break
 
     print(f"Found {correct_track['title']} on Spotify...") if correct_track else \

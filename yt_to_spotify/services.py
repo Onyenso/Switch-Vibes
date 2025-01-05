@@ -21,6 +21,7 @@ class YtToSpotifyService:
         """
         Extracts the id of a YT Music playlist from its url.
         """
+        if not url: return None
         yt_link = re.findall(constants.YT_MUSIC_REGEX, url)
         if not yt_link: return None
         yt_link = yt_link[0][0]
@@ -67,6 +68,7 @@ class YtToSpotifyService:
             parsed_playlist["tracks"],
             parsed_playlist["title"]
         )
+        
         await consumer.send(text_data=json.dumps(spotify_playlist))
         
     @staticmethod
@@ -242,7 +244,6 @@ class YtToSpotifyService:
         # Search for track on Spotify
         await asyncio.sleep(0.01)
         try:
-            # response = sp.search(query, type="track", limit=5)
             search_func = partial(sp.search, q=query, type="track", limit=5)
             response = await loop.run_in_executor(shared_executor, search_func)
 
@@ -259,8 +260,11 @@ class YtToSpotifyService:
                     string_similarity(str(artists), str(sp_artists)) >= 0.4
                 )
 
-                if (correct_artist and abs(track_duration_seconds - duration) <= 5) or \
-                (video and correct_artist and abs(track_duration_seconds - duration) <= 90):
+                if (
+                    correct_artist and abs(track_duration_seconds - duration) <= 5
+                ) or (
+                    video and correct_artist and abs(track_duration_seconds - duration) <= 90
+                ):
                     flag = False
 
                     # If string_similarity between song title from YT and Spotify is less than 0.2 OR
@@ -279,9 +283,8 @@ class YtToSpotifyService:
                         "uri": track["uri"],
                         "flag": flag
                     }
-                    # To prevent futher iteration after track has been found
+                    # To prevent further iteration after track has been found
                     break
-
         except Exception as e:
             await consumer.send(text_data=json.dumps({
                 "message": f"Error searching for {query} on Spotify: {str(e)}"
@@ -290,15 +293,13 @@ class YtToSpotifyService:
         
         if correct_track:
             message = f"Found {correct_track['title']} on Spotify..."
-            track = correct_track
         else:
             message = f"Didn't find {query} on Spotify..."
-            track = None
             
         print(message)
         await consumer.send(text_data=json.dumps({
             "message": message,
-            "track": track
+            "track": correct_track
         }))
 
         return correct_track
