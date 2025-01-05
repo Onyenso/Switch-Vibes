@@ -4,12 +4,28 @@ import re
 from concurrent.futures import ThreadPoolExecutor
 from functools import partial
 
-from shared import constants
-from shared.utils import string_similarity, list_similarity
-from spotify_to_yt.spotify_to_yt import sp, yt
+from spotipy import Spotify, SpotifyOAuth
+from ytmusicapi import YTMusic
 
+from decouple import config
+from shared import constants
+from shared.utils import Notifier, string_similarity, list_similarity
+
+
+spotify_scope = ["playlist-modify-private", "playlist-modify-public"]
+
+auth_manager = SpotifyOAuth(
+    client_id=config("SPOTIPY_CLIENT_ID"),
+    client_secret=config("SPOTIPY_CLIENT_SECRET"),
+    scope=spotify_scope, redirect_uri=config("SPOTIFY_REDIRECT_URI"),
+    show_dialog=True,
+)
+
+sp = Spotify(auth_manager=auth_manager)
+yt = YTMusic(auth="yt_to_spotify/headers_auth3.json")
 
 shared_executor = ThreadPoolExecutor()
+
 
 class SpotifyToYtService:
     @staticmethod
@@ -17,37 +33,48 @@ class SpotifyToYtService:
         """
         Extracts the id of a Spotify playlist from its url.
         """
-        if not url: return None
+        if not url:
+            return None
+        
         sp_link = re.findall(constants.SP_REGEX, url)
-        if not sp_link: return None
+
+        if not sp_link:
+            return None
+        
         sp_link = sp_link[0][0]
         sp_playlist_id = sp_link.split("playlist/")[1].split("?")[0]
         return sp_playlist_id
     
     @staticmethod
-    async def handle_spotify_to_yt(consumer, data):
-        url = json.loads(data).get("spotify_playlist_url", None)
+    async def handle_spotify_to_yt(data, notifier=Notifier()):
+        """
+        Converts a Spotify playlist to YT Music and streams feedback via WebSocket if the request
+        was made through Websocket.
+        """
+        try:
+            url = json.loads(data).get("spotify_playlist_url", None)
+        except json.JSONDecodeError as e:
+            await notifier.send({"detail": f"JSON parse error - {e}", "code": 400})
+            return
+        
         spotify_playlist_id = SpotifyToYtService.get_spotify_id_from_url(url)
 
         if not spotify_playlist_id:
-            await consumer.send(text_data=json.dumps({
-                "detail": "Invalid Spotify playlist URL.",
-                "code": 400
-            }))
+            await notifier.send({"detail": "Invalid Spotify playlist URL.", "code": 400})
             return
         
-        print("\n================Searching Spotify========================\n")
-        await consumer.send(text_data=json.dumps({"message": "Searching Spotify..."}))
-        parsed_playlist = await SpotifyToYtService.parse_yt_playlist(consumer, spotify_playlist_id)
-
-        print("\n================Searching YT Music========================\n")
-        await consumer.send(json.dumps({"message": "Searching YT Music..."}))
-        yt_music_playlist = await SpotifyToYtService.convert_spotify_to_yt(consumer, parsed_playlist)
-
-        await consumer.send(text_data=json.dumps(yt_music_playlist))
+        parsed_playlist = await SpotifyToYtService.parse_yt_playlist(spotify_playlist_id, notifier)
+        yt_music_playlist = await SpotifyToYtService.convert_spotify_to_yt(parsed_playlist, notifier)
+        if yt_music_playlist:
+            await notifier.send(yt_music_playlist)
+        return yt_music_playlist
     
     @staticmethod
-    async def parse_yt_playlist(consumer, playlist_id: str):
+    async def parse_yt_playlist(playlist_id: str, notifier=Notifier()):
+        """
+        Gets a Spotify playlist from its id and returns a collection that includes
+        the tracks of the playlist.
+        """
         # Get the first 100 tracks from playlist
         try:
             parsed_playlist_tracks = sp.playlist(
@@ -58,16 +85,16 @@ class SpotifyToYtService:
             error_message = "Sorry an error occurred. Please try again soon."
             if "404" in str(e):
                 error_message = "The requested playlist could not be found on Spotify."
-            await consumer.send(text_data=json.dumps({
-                "detail": error_message,
-                "code": 404 if "404" in str(e) else 424
-            }))
+            await notifier.send({"detail": error_message, "code": 404 if "404" in str(e) else 424})
             return
+        
+        print("\n================Searching Spotify========================\n")
+        await notifier.send({"message": "Searching Spotify..."})
 
         next = parsed_playlist_tracks["tracks"]["next"]
         offset = 0
 
-        # Get the remaining tracks, 100 at a time, if there's more
+        # Get the remaining tracks, 100 at a time, if there's more.
         while next is not None:
             offset += 100
 
@@ -82,11 +109,22 @@ class SpotifyToYtService:
             parsed_playlist_tracks["tracks"]["next"] = next
 
         print("\n================Spotify Done========================\n")
-        await consumer.send(text_data=json.dumps({"message": "Spotify Done"}))
+        await notifier.send({"message": "Spotify Done"})
         return parsed_playlist_tracks
     
     @staticmethod
-    async def convert_spotify_to_yt(consumer, spotify_playlist):
+    async def convert_spotify_to_yt(spotify_playlist: dict, notifier=Notifier()):
+        """
+        This method converts a Spotify playlist to YT Music. It searches for each track
+        from the Spotify playlist, on YT Music, creates a new playlist on YT Music and adds the found
+        tracks to the new playlist.
+        """
+        if not spotify_playlist:
+            return
+        
+        print("\n================Searching YT Music========================\n")
+        await notifier.send({"message": "Searching YT Music..."})
+
         parsed_yt_playlist = []
         nulls = []
         sp_playlist_name = spotify_playlist["name"]
@@ -102,23 +140,23 @@ class SpotifyToYtService:
             q = f"{sp_track['track']['name']} {sp_artists}"
 
             yt_track = await SpotifyToYtService.search_for_yt_track(
-                consumer=consumer,
                 query=q,
                 title=sp_track["track"]["name"],
                 artists=[artist['name'].lower() for artist in sp_track["track"]["artists"]],
                 duration=int(sp_track["track"]["duration_ms"] / 1000),
-                index=sp_tracks.index(sp_track)
+                index=sp_tracks.index(sp_track),
+                notifier=notifier
             )
         
-            parsed_yt_playlist.append(yt_track) if yt_track else nulls.append({
-                "title": sp_track['track']["name"],
-                "artists": sp_track['track']["artists"]
-            })
+            if yt_track:
+                parsed_yt_playlist.append(yt_track)
+            else:
+                nulls.append({"title": sp_track['track']["name"], "artists": sp_track['track']["artists"]})
 
         print("\n================YT Music Done========================\n")
-        await consumer.send(text_data=json.dumps({"message": "YT Music Done"}))
+        await notifier.send({"message": "YT Music Done"})
 
-        # Create yt playlist and add tracks
+        # Create yt playlist and add tracks.
         yt_playlist = yt.create_playlist(
             title=sp_playlist_name,
             description="Generated by Switch Vibes.",
@@ -139,9 +177,9 @@ class SpotifyToYtService:
 
         if data["nulls"]:
             print(f"\n{len(data['nulls'])} tracks from the playlist were not found on YT Music:\n")
+
             for track in data["nulls"]:
                 print(f"Title: {track['title']}\nArtist: {track['artists']}\n")
-            
             print("============================================")
         
         if data["flagged"]:
@@ -149,14 +187,13 @@ class SpotifyToYtService:
 
             for track in data["flagged"]:
                 print(f"Title: {track['title']}\nArtist: {track['artists']}\n")
-
             print("============================================")
 
         return data
     
     @staticmethod
-    async def search_for_yt_track(consumer, query, title, artists, duration, index):
-
+    async def search_for_yt_track(query, title, artists, duration, index, notifier=Notifier()):
+        """This method searches for a Spotify track on YT Music."""
         correct_track = None
         loop = asyncio.get_event_loop()
 
@@ -204,9 +241,7 @@ class SpotifyToYtService:
                     }
                     break
         except Exception as e:
-            await consumer.send(text_data=json.dumps({
-                "message": f"Error searching for {query} on Spotify: {str(e)}"
-            }))
+            await notifier.send({"message": f"Error searching for {query} on Spotify: {str(e)}"})
             return None
         
         if correct_track:
@@ -215,9 +250,5 @@ class SpotifyToYtService:
             message = f"{index + 1}) Didn't find {query} on YT Music..."
 
         print(message)
-        await consumer.send(text_data=json.dumps({
-            "message": message,
-            "track": correct_track
-        }))
-
+        await notifier.send({"message": message, "track": correct_track})
         return correct_track

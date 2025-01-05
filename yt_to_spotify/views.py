@@ -1,3 +1,4 @@
+import json
 from django.http import HttpResponse
 from rest_framework.response import Response
 from rest_framework.decorators import APIView
@@ -8,10 +9,12 @@ from yt_to_spotify.serializers import (
     YtToSpotifySerializer,
     YtToSpotifyResponseSerializer,
 )
+from yt_to_spotify.services import YtToSpotifyService
+from asgiref.sync import async_to_sync
 
 
 def index(request):
-    return HttpResponse("Hello World! Welcome to Switch Vibes! The server is running.")
+    return HttpResponse("Hello World! Welcome to SwitchVibes! The server is running.")
 
 
 @method_decorator(
@@ -26,7 +29,6 @@ def index(request):
 )
 class YtToSpotify(APIView):
     def post(self, request, format=None):
-        serializer = YtToSpotifySerializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        new_spotify_playlist = serializer.save()
-        return Response(new_spotify_playlist, status=200)
+        data = json.dumps(request.data)
+        result = async_to_sync(YtToSpotifyService.handle_yt_to_spotify)(data)
+        return Response(result)

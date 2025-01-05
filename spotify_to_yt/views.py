@@ -1,3 +1,5 @@
+import json
+
 from django.utils.decorators import method_decorator
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework.decorators import APIView
@@ -7,6 +9,8 @@ from spotify_to_yt.serializers import (
     SpotifyToYtSerializer,
     SpotifyToYtResponseSerializer
 )
+from spotify_to_yt.services import SpotifyToYtService
+from asgiref.sync import async_to_sync
 
 
 @method_decorator(
@@ -21,7 +25,6 @@ from spotify_to_yt.serializers import (
 )
 class SpotifyToYt(APIView):
     def post(self, request, format=None):
-        serializer = SpotifyToYtSerializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        new_yt_playlist = serializer.save()
-        return Response(new_yt_playlist, status=200)
+        data = json.dumps(request.data)
+        result = async_to_sync(SpotifyToYtService.handle_spotify_to_yt)(data)
+        return Response(result, status=200)

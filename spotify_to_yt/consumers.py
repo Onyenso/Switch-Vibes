@@ -1,6 +1,7 @@
 from channels.generic.websocket import AsyncWebsocketConsumer
 
 from spotify_to_yt.services import SpotifyToYtService
+from shared.utils import WebSocketNotifier
 
 
 class SpotifyToYtConsumer(AsyncWebsocketConsumer):
@@ -11,5 +12,5 @@ class SpotifyToYtConsumer(AsyncWebsocketConsumer):
         pass
 
     async def receive(self, text_data):
-        await SpotifyToYtService.handle_spotify_to_yt(self, text_data)
-
+        notifier = WebSocketNotifier(self)
+        await SpotifyToYtService.handle_spotify_to_yt(text_data, notifier)

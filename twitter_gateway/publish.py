@@ -1,12 +1,17 @@
-"""This file has a lot of brute force code. It will be refactored in the future. It is not currently being used."""
+"""
+This file is deprecated because it has a lot of brute force code.
+It will be refactored in the future. It is not currently being used.
+"""
+
+import re
 
 import requests
-from ..shared import constants as const
-from requests_oauthlib import OAuth1, OAuth2
-import re
-from ..spotify_to_yt.spotify_to_yt import get_spotify_playlist, convert_spotify_to_yt
-from ..yt_to_spotify.yt_to_spotify import get_yt_playlist, convert_yt_to_spotify
+from requests_oauthlib import OAuth1
 import tweepy
+
+from shared import constants as const
+from spotify_to_yt.services import SpotifyToYtService
+from yt_to_spotify.services import YtToSpotifyService
 
 
 oauth = OAuth1(
@@ -128,13 +133,13 @@ def respond_to_mentions():
             else:
                 sp_link = sp_link[0][0]
                 sp_playlist_id = sp_link.split("playlist/")[1].split("?")[0]
-                spotify_playlist = get_spotify_playlist(sp_playlist_id)
+                spotify_playlist = SpotifyToYtService.get_spotify_playlist(sp_playlist_id)
                 if "404" in spotify_playlist:
                     text = f"Hey @{author_username}🙂, the requested playlist could not be found on Spotify."
                 elif not spotify_playlist:
                     text = f"Hey @{author_username}😓, sorry an error occured. Please try again soon."
                 else:
-                    new_yt_playlist = convert_spotify_to_yt(spotify_playlist)
+                    new_yt_playlist = SpotifyToYtService.convert_spotify_to_yt(spotify_playlist)
                     text = f"Hey @{author_username}🙂, here is the new YT Music playlist: {new_yt_playlist['link']}"
                     no_of_nulls = len(new_yt_playlist["nulls"])
                     no_of_flagged = len(new_yt_playlist["flagged"])
@@ -169,13 +174,16 @@ def respond_to_mentions():
             else:
                 yt_link = yt_link[0][0]
                 yt_music_playlist_id = yt_link.split("?list=")[1].split("&")[0]
-                yt_music_playlist = get_yt_playlist(yt_music_playlist_id)
+                yt_music_playlist = YtToSpotifyService.get_yt_playlist(yt_music_playlist_id)
                 if "404" in yt_music_playlist:
                     text = f"Hey @{author_username}🙂, the requested playlist could not be found on YT Music."
                 elif not yt_music_playlist:
                     text = f"Hey @{author_username}😓, sorry an error occured. Please try again soon."
                 else:
-                    new_spotify_playlist = convert_yt_to_spotify(yt_music_playlist["tracks"], yt_music_playlist["title"])
+                    new_spotify_playlist = YtToSpotifyService.convert_yt_to_spotify(
+                        yt_music_playlist["tracks"],
+                        yt_music_playlist["title"]
+                    )
                     text = f"Hey @{author_username}🙂, here is the new Spotify playlist: {new_spotify_playlist['link']}"
                     no_of_nulls = len(new_spotify_playlist["nulls"])
                     no_of_flagged = len(new_spotify_playlist["flagged"])
