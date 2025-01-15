@@ -63,14 +63,14 @@ class SpotifyToYtService:
             await notifier.send({"detail": "Invalid Spotify playlist URL.", "code": 400})
             return
         
-        parsed_playlist = await SpotifyToYtService.parse_yt_playlist(spotify_playlist_id, notifier)
+        parsed_playlist = await SpotifyToYtService.parse_spotify_playlist(spotify_playlist_id, notifier)
         yt_music_playlist = await SpotifyToYtService.convert_spotify_to_yt(parsed_playlist, notifier)
         if yt_music_playlist:
             await notifier.send(yt_music_playlist)
         return yt_music_playlist
     
     @staticmethod
-    async def parse_yt_playlist(playlist_id: str, notifier=Notifier()):
+    async def parse_spotify_playlist(playlist_id: str, notifier=Notifier()):
         """
         Gets a Spotify playlist from its id and returns a collection that includes
         the tracks of the playlist.
