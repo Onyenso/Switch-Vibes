@@ -1,13 +1,17 @@
 import asyncio
 import json
 import re
+import time
 from concurrent.futures import ThreadPoolExecutor
 from functools import partial
+from pathlib import Path
 
+import requests
+from django.conf import settings
 from spotipy import Spotify, SpotifyOAuth
 from ytmusicapi import YTMusic
+from ytmusicapi.auth.oauth import OAuthCredentials
 
-from decouple import config
 from shared import constants
 from shared.utils import Notifier, string_similarity, list_similarity
 
@@ -15,9 +19,10 @@ from shared.utils import Notifier, string_similarity, list_similarity
 spotify_scope = ["playlist-modify-private", "playlist-modify-public"]
 
 auth_manager = SpotifyOAuth(
-    client_id=config("SPOTIPY_CLIENT_ID"),
-    client_secret=config("SPOTIPY_CLIENT_SECRET"),
-    scope=spotify_scope, redirect_uri=config("SPOTIFY_REDIRECT_URI"),
+    client_id=settings.SPOTIPY_CLIENT_ID,
+    client_secret=settings.SPOTIPY_CLIENT_SECRET,
+    scope=spotify_scope,
+    redirect_uri=settings.SPOTIFY_REDIRECT_URI,
     show_dialog=True,
 )
 
@@ -113,6 +118,45 @@ class SpotifyToYtService:
         return parsed_playlist_tracks
     
     @staticmethod
+    async def get_ytmusic_client():
+        """
+        Loads oauth.json, refreshes if expired, then returns an authenticated YTMusic client.
+        """
+        oauth_file = Path("yt_to_spotify/oauth.json")
+        creds = json.loads(oauth_file.read_text())
+
+        data = {
+            "client_id": settings.GOOGLE_CLIENT_ID,
+            "client_secret": settings.GOOGLE_CLIENT_SECRET,
+            "grant_type": "refresh_token",
+            "refresh_token": creds["refresh_token"],
+        }
+
+        response = requests.post("https://oauth2.googleapis.com/token", data=data)
+        response.raise_for_status()
+
+        if creds.get("expires_at", 0) - time.time() < 60:
+            new = response.json()
+            creds["access_token"] = new["access_token"]
+            creds["expires_in"] = new["expires_in"]
+            creds["expires_at"] = int(time.time()) + new["expires_in"]
+
+            # Google always returns at least access_token, expires_in; may return refresh_token
+            if "refresh_token" in new:
+                creds["refresh_token"] = new["refresh_token"]
+            
+            oauth_file.write_text(json.dumps(creds))
+        
+        oauth_creds = OAuthCredentials(
+            client_id=settings.GOOGLE_CLIENT_ID,
+            client_secret=settings.GOOGLE_CLIENT_SECRET,
+        )
+        return YTMusic(
+            auth=oauth_file.as_posix(),
+            oauth_credentials=oauth_creds
+        )
+    
+    @staticmethod
     async def convert_spotify_to_yt(spotify_playlist: dict, notifier=Notifier()):
         """
         This method converts a Spotify playlist to YT Music. It searches for each track
@@ -156,6 +200,9 @@ class SpotifyToYtService:
         print("\n================YT Music Done========================\n")
         await notifier.send({"message": "YT Music Done"})
 
+        # We need an authenticated YT Music client to create a playlist.
+        yt = await SpotifyToYtService.get_ytmusic_client()
+
         # Create yt playlist and add tracks.
         yt_playlist = yt.create_playlist(
             title=sp_playlist_name,
@@ -169,7 +216,10 @@ class SpotifyToYtService:
             "playlist": parsed_yt_playlist,
             "nulls": nulls,
             "flagged": [
-                {"title": track["title"], "artists": track["artists"]} for track in parsed_yt_playlist if track["flag"]
+                {
+                    "title": track["title"],
+                    "artists": track["artists"]
+                } for track in parsed_yt_playlist if track["flag"]
             ]
         }
 
