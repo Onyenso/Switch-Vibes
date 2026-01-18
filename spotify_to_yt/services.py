@@ -10,7 +10,6 @@ import requests
 from django.conf import settings
 from spotipy import Spotify, SpotifyOAuth
 from ytmusicapi import YTMusic
-from ytmusicapi.auth.oauth import OAuthCredentials
 
 from shared import constants
 from shared.utils import Notifier, string_similarity, list_similarity
@@ -118,43 +117,85 @@ class SpotifyToYtService:
         return parsed_playlist_tracks
     
     @staticmethod
-    async def get_ytmusic_client():
+    async def get_youtube_access_token():
         """
-        Loads oauth.json, refreshes if expired, then returns an authenticated YTMusic client.
+        Loads oauth.json, refreshes if expired, then returns a valid access token.
         """
         oauth_file = Path("yt_to_spotify/oauth.json")
         creds = json.loads(oauth_file.read_text())
 
-        data = {
-            "client_id": settings.GOOGLE_CLIENT_ID,
-            "client_secret": settings.GOOGLE_CLIENT_SECRET,
-            "grant_type": "refresh_token",
-            "refresh_token": creds["refresh_token"],
-        }
-
-        response = requests.post("https://oauth2.googleapis.com/token", data=data)
-        response.raise_for_status()
-
+        # Check if token is expired or about to expire
         if creds.get("expires_at", 0) - time.time() < 60:
+            data = {
+                "client_id": settings.GOOGLE_CLIENT_ID,
+                "client_secret": settings.GOOGLE_CLIENT_SECRET,
+                "grant_type": "refresh_token",
+                "refresh_token": creds["refresh_token"],
+            }
+
+            response = requests.post("https://oauth2.googleapis.com/token", data=data)
+            response.raise_for_status()
+
             new = response.json()
             creds["access_token"] = new["access_token"]
             creds["expires_in"] = new["expires_in"]
             creds["expires_at"] = int(time.time()) + new["expires_in"]
 
-            # Google always returns at least access_token, expires_in; may return refresh_token
+            # Google may return a new refresh_token
             if "refresh_token" in new:
                 creds["refresh_token"] = new["refresh_token"]
             
             oauth_file.write_text(json.dumps(creds))
         
-        oauth_creds = OAuthCredentials(
-            client_id=settings.GOOGLE_CLIENT_ID,
-            client_secret=settings.GOOGLE_CLIENT_SECRET,
-        )
-        return YTMusic(
-            auth=oauth_file.as_posix(),
-            oauth_credentials=oauth_creds
-        )
+        return creds["access_token"]
+
+    @staticmethod
+    async def create_youtube_playlist(access_token: str, title: str, description: str, privacy_status: str, video_ids: list):
+        """
+        Creates a YouTube Music playlist using the YouTube Data API v3.
+        Returns the playlist ID.
+        """
+        headers = {
+            "Authorization": f"Bearer {access_token}",
+            "Content-Type": "application/json",
+        }
+
+        # Step 1: Create the playlist
+        create_url = "https://www.googleapis.com/youtube/v3/playlists?part=snippet,status"
+        playlist_data = {
+            "snippet": {
+                "title": title,
+                "description": description,
+            },
+            "status": {
+                "privacyStatus": privacy_status.lower(),  # API expects lowercase
+            }
+        }
+
+        response = requests.post(create_url, headers=headers, json=playlist_data)
+        response.raise_for_status()
+        playlist_id = response.json()["id"]
+
+        # Step 2: Add videos to the playlist
+        insert_url = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet"
+        for video_id in video_ids:
+            item_data = {
+                "snippet": {
+                    "playlistId": playlist_id,
+                    "resourceId": {
+                        "kind": "youtube#video",
+                        "videoId": video_id,
+                    }
+                }
+            }
+            try:
+                resp = requests.post(insert_url, headers=headers, json=item_data)
+                resp.raise_for_status()
+            except requests.exceptions.HTTPError:
+                # Skip videos that can't be added (e.g., unavailable)
+                continue
+
+        return playlist_id
     
     @staticmethod
     async def convert_spotify_to_yt(spotify_playlist: dict, notifier=Notifier()):
@@ -200,14 +241,15 @@ class SpotifyToYtService:
         print("\n================YT Music Done========================\n")
         await notifier.send({"message": "YT Music Done"})
 
-        # We need an authenticated YT Music client to create a playlist.
-        yt = await SpotifyToYtService.get_ytmusic_client()
+        # Get access token and create playlist using YouTube Data API v3
+        access_token = await SpotifyToYtService.get_youtube_access_token()
 
         # Create yt playlist and add tracks.
-        yt_playlist = yt.create_playlist(
+        yt_playlist = await SpotifyToYtService.create_youtube_playlist(
+            access_token=access_token,
             title=sp_playlist_name,
             description="Generated by Switch Vibes.",
-            privacy_status = 'UNLISTED',
+            privacy_status="unlisted",
             video_ids=[track["yt_id"] for track in parsed_yt_playlist]
         )
 
