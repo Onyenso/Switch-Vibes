@@ -16,9 +16,7 @@ You can explore the endpoints and their functionalities using ReDoc and Swagger 
 
 ## Front-end
 
-You can interact with the API through the frontend [here](https://switch-vibes.vercel.app/). View the source code [here](https://github.com/Sucodes/switch-vibes).
-
-Credit: [Suvwe](https://github.com/Sucodes).
+You can interact with the API through the frontend [here](https://switchvibes.vercel.app/).
 
 ## How to Use
 
