@@ -5,3 +5,5 @@ venv
 __pycache__/
 yt_to_spotify/headers_auth2.json
 db.sqlite3
+.vscode/
+.venv/

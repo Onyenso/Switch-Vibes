@@ -1,40 +1,141 @@
 # SwitchVibes
 
-This is the back-end API service for SwitchVibes, a platform that enables seamless music playlist migration between different music streaming services. Simply provide the link to a playlist from your favorite source platform (e.g., Spotify), and SwitchVibes will automatically transfer all the songs to a new playlist in your specified destination platform. Eliminate manual playlist recreation and let SwitchVibes do the heavy lifting for you.
+Backend API for [SwitchVibes](https://switchvibes.xyz/), a playlist migration service. You paste a Spotify or YouTube Music playlist URL. SwitchVibes matches the tracks on the other platform, creates a new playlist, and returns the link. No access to the user's source or destination accounts is required.
 
-## New Features
+Apple Music is listed as coming soon on the product site.
 
-- **WebSockets for Real-Time Feedback**: The platform now supports WebSocket connections, allowing real-time feedback on playlist migration. Users receive immediate updates on tracks that are found or not found during the migration process, rather than waiting for the entire playlist migration to complete.
-- **HTTP Request Limitations**: HTTP-based playlist migration may timeout if the playlist contains a large number of tracks. In the future, a limit will be introduced to restrict HTTP migrations to playlists with a maximum number of tracks.
+**Live frontend:** [https://switchvibes.xyz/](https://switchvibes.xyz/)
 
-## API Documentation
+**API docs:** [ReDoc](https://switch-vibes-production.up.railway.app/docs/) · [Swagger](https://switch-vibes-production.up.railway.app/swagger/)
 
-You can explore the endpoints and their functionalities using ReDoc and Swagger documentation:
+## What it does
 
-- [ReDoc Documentation](https://switch-vibes-production.up.railway.app/docs/)
-- [Swagger Documentation](https://switch-vibes-production.up.railway.app/swagger/)
+| Direction | HTTP | WebSocket |
+| --- | --- | --- |
+| Spotify → YouTube Music | `POST /spotify_to_yt/` | `ws/spotify_to_yt/` |
+| YouTube Music → Spotify | `POST /yt_to_spotify/` | `ws/yt_to_spotify/` |
 
-## Front-end
+HTTP returns when the full conversion is done. WebSockets stream progress as each track is found or missed, then send the same final payload. Prefer WebSockets for large playlists; long HTTP requests can time out.
 
-You can interact with the API through the frontend [here](https://switchvibes.vercel.app/).
+Matched tracks with low title or artist similarity are marked `flag`. Tracks that could not be found are listed in `nulls`.
 
-## How to Use
+```mermaid
+flowchart LR
+  A[Playlist URL] --> B[Parse source playlist]
+  B --> C[Match tracks on destination]
+  C --> D[Create destination playlist]
+  D --> E[Return link, playlist, nulls, flagged]
+```
 
-To use SwitchVibes, you can:
+## Tech stack
 
-- **Make HTTP Requests**: Directly interact with our API using HTTP endpoints.
-- **Use WebSockets**: For a better experience with real-time feedback during playlist migration.
-- **Try the Front-End**: Use our user-friendly interface to migrate your playlists effortlessly.
+- Python 3.10, Django 4.2, Django REST Framework
+- Django Channels + Daphne (ASGI / WebSockets)
+- Spotipy (Spotify), ytmusicapi (YouTube Music)
+- drf-yasg (Swagger / ReDoc)
+- SQLite (local default)
+- Railway + Nixpacks in production
+
+## How to run
+
+### Prerequisites
+
+- Python 3.10
+- A [Spotify Developer](https://developer.spotify.com/dashboard) app (Client ID, Client Secret, redirect URI)
+- YouTube Music browser headers in `yt_to_spotify/headers_auth3.json` (needed to create YouTube Music playlists). See [ytmusicapi auth](https://ytmusicapi.readthedocs.io/en/stable/setup/browser.html).
+
+### Setup
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Create a `.env` in the project root:
+
+```env
+DJANGO_SETTINGS_MODULE=config.settings.development
+SPOTIPY_CLIENT_ID=
+SPOTIPY_CLIENT_SECRET=
+SPOTIFY_REDIRECT_URI=
+SPOTIFY_ID=
+```
+
+`SPOTIFY_ID` is the Spotify user that owns playlists created by this API.
+
+On first Spotify OAuth, Spotipy opens a browser and caches the token locally.
+
+### Server
+
+Use Daphne so both HTTP and WebSockets work:
+
+```bash
+daphne -b 127.0.0.1 -p 8000 config.asgi:application
+```
+
+`GET /` should respond with a welcome message. Open `/swagger/` or `/docs/` for the interactive spec.
+
+## Example request / response
+
+**Spotify → YouTube Music**
+
+```http
+POST /spotify_to_yt/
+Content-Type: application/json
+
+{
+  "spotify_playlist_url": "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M"
+}
+```
+
+```json
+{
+  "link": "https://music.youtube.com/playlist?list=PLxxxxxxxx",
+  "playlist": [
+    {
+      "title": "Blinding Lights",
+      "artists": ["The Weeknd"],
+      "duration_seconds": 200,
+      "yt_id": "4NRXx6U8ABQ",
+      "yt_url": "https://music.youtube.com/watch?v=4NRXx6U8ABQ",
+      "flag": false
+    }
+  ],
+  "nulls": [
+    {
+      "title": "Some Unavailable Track",
+      "artists": ["Unknown Artist"]
+    }
+  ],
+  "flagged": []
+}
+```
+
+**YouTube Music → Spotify**
+
+```http
+POST /yt_to_spotify/
+Content-Type: application/json
+
+{
+  "yt_playlist_url": "https://music.youtube.com/playlist?list=PLxxxxxxxx"
+}
+```
+
+The response shape is the same (`link`, `playlist`, `nulls`, `flagged`). Spotify tracks include `uri` instead of `yt_id` / `yt_url`.
+
+**WebSocket**
+
+Connect to `ws://127.0.0.1:8000/ws/spotify_to_yt/` (or `ws/yt_to_spotify/`) and send the same JSON body. You will receive progress messages such as `{"message": "Searching Spotify..."}` and per-track updates, then the final payload above.
+
+Invalid URLs return `{"detail": "...", "code": 400}`. Missing playlists return 404-style detail messages.
 
 ## Contributing
 
-If you find any issues or have ideas to improve the project, feel free to open an issue or submit a pull request.
+Issues and pull requests are welcome.
 
 ## Contact
 
-Say hello to me on:
-
 - [Twitter](https://twitter.com/yensouchenna)
 - [LinkedIn](https://linkedin.com/in/onyenso)
-
-Happy playlist migration with SwitchVibes!

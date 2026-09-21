@@ -4,6 +4,7 @@ import re
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 from functools import partial
+from typing import Any
 
 from django.conf import settings
 from spotipy import Spotify, SpotifyOAuth
@@ -174,7 +175,7 @@ class YtToSpotifyService:
         await notifier.send({"message": "Spotify Done"})
 
         # Create playlist.
-        spotify_playlist = sp.user_playlist_create(
+        spotify_playlist: Any = sp.user_playlist_create(
             user=settings.SPOTIFY_ID,
             name=playlist_title,
             public=False,
@@ -248,7 +249,7 @@ class YtToSpotifyService:
             search_func = partial(sp.search, q=query, type="track", limit=5)
 
             # Run the blocking sp.search call in the thread pool.
-            response = await loop.run_in_executor(shared_executor, search_func)
+            response: Any = await loop.run_in_executor(shared_executor, search_func)
 
             # Parse results to get the right track details.
             for track in response["tracks"]["items"]:

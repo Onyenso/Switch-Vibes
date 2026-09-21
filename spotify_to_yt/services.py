@@ -5,6 +5,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 from functools import partial
 from pathlib import Path
+from typing import Any
 
 import requests
 from django.conf import settings
@@ -33,7 +34,7 @@ shared_executor = ThreadPoolExecutor()
 
 class SpotifyToYtService:
     @staticmethod
-    def get_spotify_id_from_url(url: str) -> str:
+    def get_spotify_id_from_url(url: str) -> str | None:
         """
         Extracts the id of a Spotify playlist from its url.
         """
@@ -81,7 +82,7 @@ class SpotifyToYtService:
         """
         # Get the first 100 tracks from playlist
         try:
-            parsed_playlist_tracks = sp.playlist(
+            parsed_playlist_tracks: Any = sp.playlist(
                 playlist_id=playlist_id,
                 fields="id,name,tracks.items(track(name,duration_ms,artists(name))),tracks.next",
             )
@@ -102,7 +103,7 @@ class SpotifyToYtService:
         while next is not None:
             offset += 100
 
-            next_tracks = sp.playlist_items(
+            next_tracks: Any = sp.playlist_items(
                 playlist_id=playlist_id,
                 fields="items(track(name,artists(name),duration_ms)),next",
                 offset=offset
