@@ -138,4 +138,4 @@ Issues and pull requests are welcome.
 ## Contact
 
 - [Twitter](https://twitter.com/yensouchenna)
-- [LinkedIn](https://linkedin.com/in/onyenso)
+- [LinkedIn](https://linkedin.com/in/uche-onyenso)
